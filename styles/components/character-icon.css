@@ -1,0 +1,5 @@
+.character-icon > img {
+        max-width: 300px;
+        border-radius: 1rem;
+        box-shadow: black 0.75rem 0.75rem 1.3rem;
+    }

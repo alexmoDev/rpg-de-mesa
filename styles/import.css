@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&family=Poppins:wght@500&display=swap');
 
-
-@import 'reset.css';
-@import 'die.css';
+@import 'generic/reset.css';
+@import 'generic/foundation.css';
+@import 'settings/font.css';
+@import 'elements/body.css';
+@import 'components/pg-title.css';
+@import 'components/character-icon.css'
+/* @import 'die.css';
 @import 'character.css';
 @import 'sheet.css';
-@import 'atributo.css';
+@import 'atributo.css'; */
