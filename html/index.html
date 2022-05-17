@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG de Mesa</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles/import.css">
+</head> 
+<body>
+    <section class="character">
+        <h1>Escolha sua Classe</h1>
+        <a href="knight.html"><img src="assets/img/f01ea9e4f56a217ccf1eb63dde6e15b3.jpg" alt=""></a>
+        <a href=""><img src="assets/img/0de65ecb03d5571ba875011f78d331d8.jpg" alt=""></a>
+        <a href=""><img src="assets/img/52f1c92bf60bdbd2f874f039948b8435.jpg" alt=""></a>
+        <a href=""><img src="assets/img/baf2bcede2aa8e8b61f31fb0f2ba271f.jpg" alt=""></a>
+        <a href=""><img src="assets/img/8254a747df10a574fa977a9e53ad6d83.jpg" alt=""></a>
+    </section>
+
+    <section class="die">
+        <div class="container">
+            <div class="dice-wrapper">
+                <img  id="die-1">
+                <img  id="die-2">
+            </div>
+            <p id="total"></p>
+            <button onclick="roll()">ROLAR DADO</button>
+        </div>
+    </section>
+    <!--Script-->
+    <script src="scripts/die.js"></script>
+</body>
+</html>

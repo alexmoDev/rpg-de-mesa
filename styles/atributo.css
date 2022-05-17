@@ -1,0 +1,80 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.wrapper .atb {
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Averia Libre', cursive;
+    font-size: 1.5rem;
+    transform: translateY(-0.0445rem);
+}
+
+.wrapper .mod {
+    background-color: transparent;
+    border: none;
+    width: 10vw;
+    font-size: 1.5rem;
+    font-family: 'averia libre' ,sans-serif;
+    outline: none;
+}
+
+.wrapper .ball {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+
+    padding-top: 1rem;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 20rem;
+    height: 12.5vh;
+    width: 26vw;
+    transform: translateY(3rem);
+    margin-left: 0.5rem;
+    border: 5px solid #222;
+    text-align: center;
+    font-family: 'averia libre' ,sans-serif;
+    font-size: 1.5rem;
+    line-height: 1vh;
+    outline: none;
+}
+
+.atributo {
+    font-family: 'Averia Libre', cursive;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+
+    height: 13vh;
+    width: 45vw;
+    border: 3px solid #222;
+    border-radius: 0.3rem;
+
+    background: linear-gradient(
+        #555,
+        #222
+    );
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.atributo:last-of-type {
+    margin-bottom: 20rem;
+}
+
+.atributo h3 {
+    margin: 0.5rem;
+}

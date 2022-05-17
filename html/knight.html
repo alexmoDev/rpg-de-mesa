@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavaleira</title>
+
+    <link rel="stylesheet" href="styles/import.css">
+</head>
+<body>
+    <section class="sheet">
+        <h1 class="title">Cavaleira</h1>
+        <input type="text" id="player" value="Jogadora">
+        <input type="text" id="character" value="Nome da Personagem">
+
+        <h2 class="subtitle">Aparência</h2>
+        <textarea id="description"></textarea>
+
+        <div class="wrapper">
+            <div class="atributo">
+                <h3>Força</h3>
+                <input class="atb" type="text" id="" value="1">
+                <div class="ball">
+                    <label for="">FOR</label>
+                    <input class="mod" value="+3" type="text" name="" id="">
+                </div>                    
+            </div>
+
+            <div class="atributo">
+                <h3>Destreza</h3>
+                <input class="atb" type="text" id="" value="1">
+                <div class="ball">
+                    <label for="">DES</label>
+                    <input class="mod" value="+3" type="text" name="" id="">
+                </div>                
+            </div>
+
+            <div class="atributo">
+                <h3>Constituição</h3>
+                <input class="atb" type="text" id="" value="1">
+                <div class="ball">
+                    <label for="">CON</label>
+                    <input class="mod" value="+3" type="text" name="" id="">
+                </div>                
+            </div>
+
+            <div class="atributo">
+                <h3>Inteligência</h3>
+                <input class="atb" type="text" id="" value="1">
+                <div class="ball">
+                    <label for="">INT</label>
+                    <input class="mod" value="+3" type="text" name="" id="">
+                </div>                
+            </div>
+
+            <div class="atributo">
+                <h3>Sabedoria</h3>
+                <input class="atb" type="text" id="" value="1">
+                <div class="ball">
+                    <label for="">SAB</label>
+                    <input class="mod" value="+3" type="text" name="" id="">
+                </div>                
+            </div>
+
+            <div class="atributo">
+                <h3>Carisma</h3>
+                <input class="atb" type="text" id="" value="1">
+                <div class="ball">
+                    <label for="">CAR</label>
+                    <input class="mod" value="+3" type="text" name="" id="">
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section class="die">
+        <div class="container">
+            <div class="dice-wrapper">
+                <img  id="die-1">
+                <img  id="die-2">
+            </div>
+            <p id="total"></p>
+            <button onclick="roll()">ROLAR DADO</button>
+        </div>
+    </section>
+    <!--Script-->
+    <script src="scripts/die.js"></script>
+</body>
+</html>
