@@ -1,0 +1,27 @@
+.input-text {
+    color: #eee;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--averia-font);
+    font-style: italic;
+}
+
+.input-text.-small{
+    font-size: 1rem;
+}
+
+.input-text.-dark {
+    background-color: var(--contrast-color);
+    text-align: left;
+    padding: 0.5rem;
+    width: 85vw;
+    height: 20vh;
+    border-radius: 1rem;
+}
+
+.-thin {
+    width: 1.5rem;
+}

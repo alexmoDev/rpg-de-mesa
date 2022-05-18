@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+    gap: 1.7rem;
+
+    font-family: var(--poppins-font);
+    background-color: var(--bg-color);
+    color: #eee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: var(--averia-font);
+}
+
+form > .input-text.-dark {
+    margin: 1rem 0rem;
+}

@@ -4,75 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cavaleira</title>
+    <title>A Cavaleira</title>
 
-    <link rel="stylesheet" href="styles/import.css">
+    <link rel="stylesheet" href="../styles/import.css">
 </head>
 <body>
-    <section class="sheet">
-        <h1 class="title">Cavaleira</h1>
-        <input type="text" id="player" value="Jogadora">
-        <input type="text" id="character" value="Nome da Personagem">
+    <form>
+        <h1 class="pg-title -larger">A Cavaleira</h1>
+        <input class="input-text" type="text" id="" value="Nome da Personagem">
+        <textarea class="input-text -border -dark -small" id="">Aparência/Descrição:</textarea>
 
-        <h2 class="subtitle">Aparência</h2>
-        <textarea id="description"></textarea>
-
-        <div class="wrapper">
-            <div class="atributo">
-                <h3>Força</h3>
-                <input class="atb" type="text" id="" value="1">
+        <section class="atb-sec">
+            <article class="atb-item">
+                <div class="value">
+                    <label>Força</label>
+                    <input class="input-text -thin" type="text" id="" value="12">
+                </div>
+                
                 <div class="ball">
                     <label for="">FOR</label>
-                    <input class="mod" value="+3" type="text" name="" id="">
-                </div>                    
-            </div>
+                    <input class="input-text -thin" value="+3" type="text" id="">
+                </div>
 
-            <div class="atributo">
-                <h3>Destreza</h3>
-                <input class="atb" type="text" id="" value="1">
+                <div class="deb">
+                <label for="">Fraco -1</label>
+                    <input type="checkbox" id="">
+                </div>               
+            </article>
+
+            <article class="atb-item">
+                <div class="value">
+                    <label>Destreza</label>
+                    <input class="input-text -thin" type="text" id="" value="12">
+                </div>
+
                 <div class="ball">
                     <label for="">DES</label>
-                    <input class="mod" value="+3" type="text" name="" id="">
-                </div>                
-            </div>
+                    <input class="input-text -thin" value="+3" type="text" id="">
+                </div>
+                
+                <div class="deb">
+                <label for="">Trêmulo -1</label>
+                    <input type="checkbox" id="">
+                </div>
+            </article>
 
-            <div class="atributo">
-                <h3>Constituição</h3>
-                <input class="atb" type="text" id="" value="1">
+            <article class="atb-item">
+                <div class="value">
+                    <label>Constituição</label>
+                    <input class="input-text -thin" type="text" id="" value="12">
+                </div>
+
                 <div class="ball">
                     <label for="">CON</label>
-                    <input class="mod" value="+3" type="text" name="" id="">
-                </div>                
-            </div>
+                    <input class="input-text -thin" value="+3" type="text" id="">
+                </div>
+                
+                <div class="deb">
+                <label for="">Doente -1</label>
+                    <input type="checkbox" id="">
+                </div>
+            </article>
 
-            <div class="atributo">
-                <h3>Inteligência</h3>
-                <input class="atb" type="text" id="" value="1">
+            <article class="atb-item">
+                <div class="value">
+                    <label>Inteligência</label>
+                    <input class="input-text -thin" type="text" id="" value="12">
+                </div>
+                
                 <div class="ball">
                     <label for="">INT</label>
-                    <input class="mod" value="+3" type="text" name="" id="">
-                </div>                
-            </div>
+                    <input class="input-text -thin" value="+3" type="text" id="">
+                </div>
+                
+                <div class="deb">
+                <label for="">Grogue -1</label>
+                    <input type="checkbox" id="">
+                </div>
+            </article>
 
-            <div class="atributo">
-                <h3>Sabedoria</h3>
-                <input class="atb" type="text" id="" value="1">
+            <article class="atb-item">
+                <div class="value">
+                    <label>Sabedoria</label>
+                    <input class="input-text -thin" type="text" id="" value="12">
+                </div>
+                
                 <div class="ball">
                     <label for="">SAB</label>
-                    <input class="mod" value="+3" type="text" name="" id="">
-                </div>                
-            </div>
+                    <input class="input-text -thin" value="+3" type="text" id="">
+                </div>
+                
+                <div class="deb">
+                <label for="">Confuso -1</label>
+                    <input type="checkbox" id="">
+                </div>
+            </article>
 
-            <div class="atributo">
-                <h3>Carisma</h3>
-                <input class="atb" type="text" id="" value="1">
+            <article class="atb-item">
+                <div class="value">
+                    <label>Carisma</label>
+                    <input class="input-text -thin" type="text" id="" value="12">
+                </div>
+                
                 <div class="ball">
                     <label for="">CAR</label>
-                    <input class="mod" value="+3" type="text" name="" id="">
-                </div>                
-            </div>
-        </div>
-    </section>
+                    <input class="input-text -thin" value="+3" type="text" id="">
+                </div>
+                
+                <div class="deb">
+                <label for="">Marcado -1</label>
+                    <input type="checkbox" id="">
+                </div>
+            </article>
+        </section>
+    </form>
 
     <section class="die">
         <div class="container">
@@ -84,7 +129,7 @@
             <button onclick="roll()">ROLAR DADO</button>
         </div>
     </section>
-    <!--Script-->
+
     <script src="scripts/die.js"></script>
 </body>
 </html>

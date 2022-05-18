@@ -1,0 +1,46 @@
+.atb-item label {
+    font-size: 1.2rem;
+}
+
+.atb-item > .value {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.value > input {
+    transform: translateY(-0.27rem);
+}
+
+.atb-item > .ball {
+    background-color: var(--bg-color);
+    border: 0.3rem solid var(--contrast-color);
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 2.5rem;
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball input {
+    transform: translateX(-0.2rem);
+}
+
+.atb-item .deb {
+    align-self: flex-end;
+    transform: translateY(-3vh);
+}
+
+.deb label {
+    font-size: 0.8rem;
+    margin-right: -0.1rem;
+}
+
+.deb input {
+    transform: translateY(0.14rem) scale(1.5);
+}
