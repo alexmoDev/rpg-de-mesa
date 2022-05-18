@@ -9,5 +9,5 @@
 @import 'components/input-text.css';
 @import 'components/atb-sec.css';
 @import 'components/atb-item.css';
-/* @import 'die.css';
-@import 'atributo.css'; */
+@import 'components/xp-level.css';
+@import 'components/status-core.css';
