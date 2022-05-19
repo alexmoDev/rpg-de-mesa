@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .die{
+    z-index: 2;
     width: 100%;
     background: linear-gradient(
         #e92e3d,

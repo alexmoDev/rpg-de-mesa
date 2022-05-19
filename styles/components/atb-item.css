@@ -33,12 +33,11 @@
 
 .atb-item .deb {
     align-self: flex-end;
-    transform: translateY(-3vh);
+    transform: translateY(-2vh);
 }
 
 .deb label {
     font-size: 0.8rem;
-    margin-right: -0.1rem;
 }
 
 .deb input {

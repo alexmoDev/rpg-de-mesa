@@ -1,9 +1,9 @@
-let images = ["assets/svg/dice-01.svg",
-"assets/svg/dice-02.svg",
-"assets/svg/dice-03.svg",
-"assets/svg/dice-04.svg",
-"assets/svg/dice-05.svg",
-"assets/svg/dice-06.svg"];
+let images = ["../assets/svg/dice-01.svg",
+"../assets/svg/dice-02.svg",
+"../assets/svg/dice-03.svg",
+"../assets/svg/dice-04.svg",
+"../assets/svg/dice-05.svg",
+"../assets/svg/dice-06.svg"];
 let dice = document.querySelectorAll(".die img");
 
 function roll(){

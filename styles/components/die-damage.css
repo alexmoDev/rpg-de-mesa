@@ -1,35 +1,38 @@
-.die-damege {
+.die-damage {
     position: relative;
     width: 100%;
     margin-top: 3rem;
+    margin-bottom: 20rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.die-damege div{
+.die-damage button{
     z-index: 1;
     position: relative;
+    background-color: transparent;
+    border: none;
 }
 
-.die-damege div::before{
+.die-damage button::before{
     content: '';
     background-color: white;
     width: 95px;
-    height: 50px;
+    height: 45px;
     z-index: -1;
     position: absolute;
-    bottom: 20px;
+    bottom: 22px;
     border-radius: 4rem;
     left: 2px;
 }
 
-.die-damege img {
+.die-damage img {
     z-index: 1;
 }
 
-.die-damege::after {
+.die-damage::after {
     content: '';
     position: absolute;
     bottom: 50%;
@@ -40,7 +43,7 @@
     transform: translateY(50%);
 }
 
-.die-damege::before {
+.die-damage::before {
     content: '';
     position: absolute;
     bottom: 50%;
