@@ -1,0 +1,53 @@
+.die-damege {
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.die-damege div{
+    z-index: 1;
+    position: relative;
+}
+
+.die-damege div::before{
+    content: '';
+    background-color: white;
+    width: 95px;
+    height: 50px;
+    z-index: -1;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 4rem;
+    left: 2px;
+}
+
+.die-damege img {
+    z-index: 1;
+}
+
+.die-damege::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    height: 2.5vh;
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--contrast-color);
+    transform: translateY(50%);
+}
+
+.die-damege::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    height: 8rem;
+    width: 8rem;
+    border-radius: 4rem;
+    background-color: var(--contrast-color);
+}
