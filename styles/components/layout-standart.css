@@ -1,0 +1,11 @@
+.layout-standart {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+.layout-standart label {
+    font-size: 1.5rem;
+}

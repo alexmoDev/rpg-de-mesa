@@ -33,7 +33,7 @@
 
 .atb-item .deb {
     align-self: flex-end;
-    transform: translateY(-2vh);
+    transform: translateY(-1.3rem);
 }
 
 .deb label {

@@ -118,12 +118,12 @@
             </article>
         </section>
 
-        <section class="xp-level">
-            <div class="level">
+        <section class="layout-standart">
+            <div class="level info-layout">
                 <label for="">Nível</label>
                 <input type="text" value="10" class="input-text -thin">
             </div>
-            <div class="xp">
+            <div class="second-layout">
                 <label for="">XP</label>
                 <input type="text" id="" value="7" class="input-text -thin">
             </div>
@@ -152,21 +152,47 @@
             <button><img id="falcon" alt=""></button>
         </section>
 
-        
+        <textarea class="input-text -border -dark -small" id="">Vínculos:</textarea>
+
+        <section class="all-equip">
+            <div class="layout-standart">
+                <div class="info-layout">
+                    <label for="">Moedas</label>
+                    <input type="text" value="100" class="input-text -thin">
+                </div>
+                <div class="second-layout">
+                    <label for="">Carga</label>
+                    <input class="input-text -thin" type="text" value="10">
+                    <span>/</span>
+                    <input class="input-text -thin" type="text" value="10" id="">
+                </div>
+            </div>
+
+            <textarea class="input-text -border -dark -small" id="">Equipamentos:</textarea>
+        </section>
+
+        <section class="main-die">
+            <div class="container">
+                <div class="wrapper">
+                    <img  id="die-1">
+                    <img  id="die-2">
+                </div>
+                <p id="total"></p>
+                <button id="roll">ROLAR DADO</button>
+            </div>
+        </section>
+
+        <section class="char-moves">
+            <h2>Movimentos:</h2>
+            <textarea class="input-text -border -dark -small" id=""></textarea>
+            <div id="moves"></div>
+            <button id="new"></button>
+            <button id="delete"><img src="../assets/img/trash.png" alt=""></button>
+        </section>
     </form>
 
-    <section class="die">
-        <div class="container">
-            <div class="dice-wrapper">
-                <img  id="die-1">
-                <img  id="die-2">
-            </div>
-            <p id="total"></p>
-            <button onclick="roll()">ROLAR DADO</button>
-        </div>
-    </section>
-
-    <script src="../scripts/die.js"></script>
+    <script src="../scripts/main-die.js"></script>
     <script src="../scripts/die-damage.js"></script>
+    <script src="../scripts/add-remove.js"></script>
 </body>
 </html>

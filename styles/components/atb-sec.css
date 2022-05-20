@@ -7,7 +7,7 @@
 .atb-sec > .atb-item {
     border: 0.3rem solid var(--contrast-color);
     border-radius: 0.3rem;
-    height: 12vh;
+    height: 4.7rem;
     width: 44vw;
 
     display: flex;
@@ -24,5 +24,5 @@
     );
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100% 50%;
+    background-size: 100% 55%;
 }

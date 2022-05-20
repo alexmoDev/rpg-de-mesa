@@ -4,9 +4,16 @@ let images = ["../assets/svg/dice-01.svg",
 "../assets/svg/dice-04.svg",
 "../assets/svg/dice-05.svg",
 "../assets/svg/dice-06.svg"];
-let dice = document.querySelectorAll(".die img");
+let dice = document.querySelectorAll(".main-die img");
+let btn = document.querySelector('#roll');
 
-function roll(){
+btn.addEventListener('click', roll);
+
+function roll(event){
+    if (event !== undefined) {
+        event.preventDefault();
+    };
+
     dice.forEach(function(die){
         die.classList.add("shake");
     });

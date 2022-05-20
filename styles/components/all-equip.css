@@ -1,0 +1,18 @@
+.all-equip {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-equip .second-layout {
+    height: 7vh;
+    width: 36vw;
+    padding: 0rem 0.3rem;
+}
+
+.all-equip textarea {
+    margin: 2rem 0rem;
+    height: 35vh !important;
+}

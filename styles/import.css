@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,700;1,700&family=Poppins:wght@500&display=swap');
 
-@import 'generic/reset.css';
-@import 'settings/font.css';
+@import 'reset.css';
 @import 'settings/color.css';
+@import 'settings/font.css';
 @import 'elements.css';
 @import 'components/pg-title.css';
 @import 'components/character-icon.css';
 @import 'components/input-text.css';
 @import 'components/atb-sec.css';
 @import 'components/atb-item.css';
-@import 'components/xp-level.css';
+@import 'components/layout-standart.css';
+@import 'components/info-layout.css';
+@import 'components/second-layout.css';
 @import 'components/status-core.css';
 @import 'components/die-damage.css';
-@import 'die.css';
+@import 'components/all-equip.css';
+@import 'components/char-moves.css';
+@import 'components/main-die.css';
