@@ -23,7 +23,7 @@ function rollDmg(event){
         console.log(diceOneValue);
         document.querySelector("#falcon").setAttribute("src", img[diceOneValue]);
     },
-    1000
+    2500
     );
 }
 rollDmg();

@@ -11,140 +11,142 @@
 <body>
     <form>
         <h1 class="pg-title -larger">A Cavaleira</h1>
-        <input class="input-text" type="text" id="" value="Nome da Personagem">
-        <textarea class="input-text -border -dark -small" id="">Aparência/Descrição:</textarea>
+        <input id="name-inp" class="input-text" type="text" value="Nome da Personagem">
+        <textarea id="look-txt" class="input-text -border -dark -small">Aparência/Descrição:</textarea>
 
         <section class="atb-sec">
             <article class="atb-item">
                 <div class="value">
                     <label>Força</label>
-                    <input class="input-text -thin" type="text" id="" value="12">
+                    <input id="forca-inp" class="input-text -thin" type="text" value="12">
                 </div>
                 
                 <div class="ball">
                     <label for="">FOR</label>
-                    <input class="input-text -thin" value="+3" type="text" id="">
+                    <input id="for-inp" class="input-text -thin" value="+3" type="text">
                 </div>
 
                 <div class="deb">
                 <label for="">Fraco -1</label>
-                    <input type="checkbox" id="">
+                    <input id="fraco-inp" type="checkbox">
                 </div>               
             </article>
 
             <article class="atb-item">
                 <div class="value">
                     <label>Destreza</label>
-                    <input class="input-text -thin" type="text" id="" value="12">
+                    <input id="destreza-inp" class="input-text -thin" type="text" value="12">
                 </div>
 
                 <div class="ball">
                     <label for="">DES</label>
-                    <input class="input-text -thin" value="+3" type="text" id="">
+                    <input id="des-inp" class="input-text -thin" value="+3" type="text">
                 </div>
                 
                 <div class="deb">
                 <label for="">Trêmulo -1</label>
-                    <input type="checkbox" id="">
+                    <input id="tremulo-inp" type="checkbox">
                 </div>
             </article>
 
             <article class="atb-item">
                 <div class="value">
                     <label>Constituição</label>
-                    <input class="input-text -thin" type="text" id="" value="12">
+                    <input id="const-inp" class="input-text -thin" type="text" value="12">
                 </div>
 
                 <div class="ball">
                     <label for="">CON</label>
-                    <input class="input-text -thin" value="+3" type="text" id="">
+                    <input id="con-inp" class="input-text -thin" value="+3" type="text">
                 </div>
                 
                 <div class="deb">
                 <label for="">Doente -1</label>
-                    <input type="checkbox" id="">
+                    <input id="doente-inp" type="checkbox">
                 </div>
             </article>
 
             <article class="atb-item">
                 <div class="value">
                     <label>Inteligência</label>
-                    <input class="input-text -thin" type="text" id="" value="12">
+                    <input id="inteli-inp" class="input-text -thin" type="text" value="12">
                 </div>
                 
                 <div class="ball">
                     <label for="">INT</label>
-                    <input class="input-text -thin" value="+3" type="text" id="">
+                    <input id="int-inp" class="input-text -thin" value="+3" type="text" >
                 </div>
                 
                 <div class="deb">
                 <label for="">Grogue -1</label>
-                    <input type="checkbox" id="">
+                    <input id="grogue-inp" type="checkbox">
                 </div>
             </article>
 
             <article class="atb-item">
                 <div class="value">
                     <label>Sabedoria</label>
-                    <input class="input-text -thin" type="text" id="" value="12">
+                    <input id="sabedoria-inp" class="input-text -thin" type="text" value="12">
                 </div>
                 
                 <div class="ball">
                     <label for="">SAB</label>
-                    <input class="input-text -thin" value="+3" type="text" id="">
+                    <input id="sab-inp" class="input-text -thin" value="+3" type="text">
                 </div>
                 
                 <div class="deb">
                 <label for="">Confuso -1</label>
-                    <input type="checkbox" id="">
+                    <input id="confuso-inp" type="checkbox">
                 </div>
             </article>
 
             <article class="atb-item">
                 <div class="value">
                     <label>Carisma</label>
-                    <input class="input-text -thin" type="text" id="" value="12">
+                    <input id="carisma-inp" class="input-text -thin" type="text" value="12">
                 </div>
                 
                 <div class="ball">
                     <label for="">CAR</label>
-                    <input class="input-text -thin" value="+3" type="text" id="">
+                    <input id="car-inp" class="input-text -thin" value="+3" type="text">
                 </div>
                 
                 <div class="deb">
                 <label for="">Marcado -1</label>
-                    <input type="checkbox" id="">
+                    <input id="marcado-inp" type="checkbox">
                 </div>
             </article>
         </section>
 
+        <textarea id="notes-txt" class="input-text -border -dark -small">Anotações:</textarea>
+
         <section class="layout-standart">
             <div class="level info-layout">
                 <label for="">Nível</label>
-                <input type="text" value="10" class="input-text -thin">
+                <input id="level-inp" type="text" value="10" class="input-text -thin">
             </div>
             <div class="second-layout">
                 <label for="">XP</label>
-                <input type="text" id="" value="7" class="input-text -thin">
+                <input id="xp-inp" type="text" value="7" class="input-text -thin">
             </div>
         </section>
 
         <section class="status-core">
             <div>
                 <label for="">PV:</label>
-                <input class="input-text -thin" type="text" value="10">
+                <input id="pvAtual-inp" class="input-text -thin" type="text" value="10">
                 <span>/</span>
-                <input class="input-text -thin" type="text" value="10" id="">
+                <input id="pvMax-inp" class="input-text -thin" type="text" value="10">
             </div>
             
             <div class="dano">
                 <label for="">Dano</label>
-                <input class="input-text -thin" type="text" value="D10" id="">
+                <input id="dano-inp" class="input-text -thin" type="text" value="D10">
             </div>
             
             <div>
                 <label for="">Armadura:</label>
-                <input class="input-text -thin" type="text" value="10" id="">
+                <input id="armor-inp" class="input-text -thin" type="text" value="10">
             </div>
         </section>
 
@@ -152,23 +154,23 @@
             <button><img id="falcon" alt=""></button>
         </section>
 
-        <textarea class="input-text -border -dark -small" id="">Vínculos:</textarea>
+        <textarea id="vinculos-txt" class="input-text -border -dark -small">Vínculos:</textarea>
 
         <section class="all-equip">
             <div class="layout-standart">
                 <div class="info-layout">
                     <label for="">Moedas</label>
-                    <input type="text" value="100" class="input-text -thin">
+                    <input id="coin-inp" type="text" value="100" class="input-text -thin">
                 </div>
                 <div class="second-layout">
                     <label for="">Carga</label>
-                    <input class="input-text -thin" type="text" value="10">
+                    <input id="cargaAtual-inp" class="input-text -thin" type="text" value="10">
                     <span>/</span>
-                    <input class="input-text -thin" type="text" value="10" id="">
+                    <input id="cargaMax-inp" class="input-text -thin" type="text" value="10">
                 </div>
             </div>
 
-            <textarea class="input-text -border -dark -small" id="">Equipamentos:</textarea>
+            <textarea id="equip-txt" class="input-text -border -dark -small">Equipamentos:</textarea>
         </section>
 
         <section class="main-die">
@@ -184,13 +186,17 @@
 
         <section class="char-moves">
             <h2>Movimentos:</h2>
-            <textarea class="input-text -border -dark -small" id=""></textarea>
+            <textarea id="moves-txt" class="input-text -border -dark -small"></textarea>
             <div id="moves"></div>
             <button id="new"></button>
             <button id="delete"><img src="../assets/img/trash.png" alt=""></button>
         </section>
+
+        <button id="save" style="width: 50%; margin-top: 2rem; border-radius: 0.5rem; border: none;
+        background-color: #eee; padding: 0.5rem 0rem;"><img src="../assets/img/disquete.png" style="max-height: 2.5rem;"></button>
     </form>
 
+    <script src="../scripts/local-storage.js"></script>
     <script src="../scripts/main-die.js"></script>
     <script src="../scripts/die-damage.js"></script>
     <script src="../scripts/add-remove.js"></script>

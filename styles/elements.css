@@ -21,3 +21,7 @@ form {
 form > .input-text.-dark {
     margin: 1rem 0rem;
 }
+
+form #notes-txt {
+    height: 35vh;
+}

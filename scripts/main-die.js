@@ -28,7 +28,7 @@ function roll(event){
         document.querySelector("#die-2").setAttribute("src", images[dieTwoValue]);
         document.querySelector("#total").innerHTML = "Sua rolagem deu " + ( (dieOneValue +1) + (dieTwoValue + 1) );
     },
-    1000
+    2500
     );
 }
 roll();

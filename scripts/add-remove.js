@@ -6,7 +6,7 @@ $new.addEventListener('click', addMove);
 
 function addMove(event) {
     event.preventDefault();
-    $moves.insertAdjacentHTML('beforeend', '<textarea class="input-text -border -dark -small" id=""></textarea>');
+    $moves.insertAdjacentHTML('beforeend', '<textarea class="input-text -border -dark -small"></textarea>');
 }
 
 $remove.addEventListener('click', removeMove);
