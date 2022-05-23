@@ -1,7 +1,3 @@
 .pg-title {
-    font-size: var(--font-title-size);
-}
-
-.pg-title.-larger {
-    font-size: 1.7rem;
+    font-size: var(--title-font-size);
 }

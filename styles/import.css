@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,700;1,700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital@0;1&display=swap');
 
 @import 'reset.css';
-@import 'settings/color.css';
-@import 'settings/font.css';
+@import 'variables.css';
 @import 'elements.css';
+@import 'components/main-structure.css';
 @import 'components/pg-title.css';
 @import 'components/character-icon.css';
 @import 'components/input-text.css';

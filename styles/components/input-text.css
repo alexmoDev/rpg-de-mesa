@@ -15,7 +15,7 @@
 
 .input-text.-dark {
     background-color: var(--contrast-color);
-    text-align: left;
+    text-align: justify;
     padding: 0.5rem;
     width: 87vw;
     height: 23vh;

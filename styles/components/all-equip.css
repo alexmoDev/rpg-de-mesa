@@ -8,11 +8,25 @@
 
 .all-equip .second-layout {
     height: 7vh;
-    width: 36vw;
+    width: 40vw;
     padding: 0rem 0.3rem;
+}
+
+.all-equip .second-layout label {
+    font-size: 1.3rem !important;
+}
+
+.all-equip .info-layout input {
+    width: 2.7rem !important;
+    height: 2.7rem !important;
 }
 
 .all-equip textarea {
     margin: 2rem 0rem;
     height: 35vh !important;
+    width: 95% !important;
+}
+
+.all-equip input {
+    width: 2rem !important;
 }

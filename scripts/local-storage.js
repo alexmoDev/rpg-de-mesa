@@ -98,7 +98,7 @@ for (let i = 0; i < textAreasVoid.length; i++) {
     indexTxtVoid++;
 }
 
-for (let i = 0; i < parseInt(localStorage.getItem('movesLength')); i++) {
+for (let i = 1; i < parseInt(localStorage.getItem('movesLength')); i++) {
     function addMove(event) {
         let $moves = document.querySelector('#moves');
         $moves.insertAdjacentHTML('beforeend', '<textarea class="input-text -border -dark -small"></textarea>');
@@ -109,7 +109,7 @@ for (let i = 0; i < parseInt(localStorage.getItem('movesLength')); i++) {
 let $movements = document.querySelectorAll('#moves textarea');
 let indexMoveVoid = 0;
 for (let i=0; i < $movements.length; i++) {
-    $movements[indexMoveVoid].value = localStorage.getItem(indexMoveVoid + 'move');
+    $movements[indexMoveVoid].value = localStorage.getItem(indexMoveVoid + 'move') || $movements[indexMoveVoid].value;
     indexMoveVoid++;
 };
 
