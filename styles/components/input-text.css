@@ -5,6 +5,7 @@
     outline: none;
     text-align: center;
     font-family: inherit;
+    font-weight: inherit !important;
     font-size: var(--third-font-size);
 }
 
@@ -23,7 +24,7 @@
     padding: 0.6rem;
     box-sizing: border-box;
     color: var(--second-color);
-    height: 25vh;
+    height: 12rem;
 }
 
 .input-text.-textarea::placeholder {

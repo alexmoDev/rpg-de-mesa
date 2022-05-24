@@ -1,19 +1,24 @@
 @media screen and (min-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .initial-pg {
+        box-shadow: var(--box-shadow);
+    }
+
     .character-icon {
-        width: 31%;
+        padding: 0rem 1.3rem;
     }
 
     .main-header {
         padding-top: 2rem !important;
         width: 40%;
         box-shadow: var(--box-shadow);
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 1.5rem;
     }
 
     .header {
@@ -24,5 +29,6 @@
         width: 40%;
         box-sizing: border-box;
         box-shadow: var(--box-shadow);
+        padding-top: 0.7rem;
     }
 }
