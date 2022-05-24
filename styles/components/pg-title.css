@@ -1,3 +1,5 @@
 .pg-title {
     font-size: var(--title-font-size);
+    font-family: var(--poppins);
+    margin-bottom: 1rem;
 }

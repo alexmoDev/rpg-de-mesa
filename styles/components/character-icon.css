@@ -1,5 +1,26 @@
-.character-icon > img {
-        max-width: 300px;
-        border-radius: 1rem;
-        box-shadow: black 0.75rem 0.75rem 1.3rem;
-    }
+.character-icon {
+    width: 100%;
+    text-decoration: none;
+}
+
+.character-icon > h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: var(--second-color);
+}
+
+.character-icon div {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--second-bg);
+    border-radius: var(--border-radius);
+    padding: 0.7rem 0rem 1.3rem 0rem;
+}
+
+.character-icon img {
+    max-width: 170px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}

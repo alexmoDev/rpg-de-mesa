@@ -1,7 +1,13 @@
 :root {
     --font-family: 'Averia Libre', cursive;
+    --poppins: 'Poppins', sans-serif;
     --title-font-size: 1.7rem;
 
     --bg-color: #222f3e;
-    --color: #fff;
+    --second-bg: #576574;
+    --color: #eee;
+    --second-color: #feca57;
+
+    --border-radius: 1rem;
+    --box-shadow: #000 0.7rem 0.7rem 1.5rem;
 }
