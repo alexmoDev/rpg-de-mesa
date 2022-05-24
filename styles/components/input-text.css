@@ -1,25 +1,34 @@
 .input-text {
-    color: #eee;
+    color: inherit;
     background-color: transparent;
     border: none;
     outline: none;
     text-align: center;
-    font-size: 1.3rem;
-    font-family: var(--averia-font);
+    font-family: inherit;
+    font-size: var(--third-font-size);
+}
+
+.input-text.-title {
+    font-size: var(--title-font-size);
+}
+
+.input-text.-italic {
     font-style: italic;
 }
 
-.input-text.-small{
-    font-size: 1rem;
+.input-text.-textarea {
+    width: 100%;
+    background-color: var(--second-bg);
+    text-align: left;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    color: var(--second-color);
+    height: 25vh;
 }
 
-.input-text.-dark {
-    background-color: var(--contrast-color);
-    text-align: justify;
-    padding: 0.5rem;
-    width: 87vw;
-    height: 23vh;
-    border-radius: 1rem;
+.input-text.-textarea::placeholder {
+    color: var(--second-color);
+    font-style: italic;
 }
 
 .-thin {

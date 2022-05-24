@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="../styles/import.css">
 </head>
 <body>
-    <section class="main-structure -top main-header">
-        <img src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
+    <section class="main-header main-structure -top -gap">
+        <img class="header" style="max-width: 100%;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
+        <input class="input-text -title -italic" type="text" value="Nome da Personagem">
+        <div class="char-depic">
+            <label class="main-label">Aparência/Descrição:</label>
+            <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
+        </div>
     </section>
-    <input id="name-inp" class="input-text" type="text" value="Nome da Personagem">
-    <textarea id="look-txt" class="input-text -border -dark -small">Aparência/Descrição:</textarea>
 
     <section class="atb-sec">
         <article class="atb-item">
@@ -216,7 +219,7 @@ Ignore o rótulo desengonçada em qualquer armadura que você vestir.</textarea>
 
     <button id="save" style="width: 50%; margin-top: 2rem; border-radius: 0.5rem; border: none;
     background-color: #eee; padding: 0.5rem 0rem;"><img src="../assets/img/disquete.png" style="max-height: 2.5rem;"></button>
-    
+
     <script src="../scripts/local-storage.js"></script>
     <script src="../scripts/main-die.js"></script>
     <script src="../scripts/die-damage.js"></script>

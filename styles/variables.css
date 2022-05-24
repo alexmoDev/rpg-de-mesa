@@ -3,11 +3,15 @@
     --poppins: 'Poppins', sans-serif;
     --title-font-size: 1.7rem;
     --second-font-size: 1.4rem;
+    --third-font-size: 1rem;
 
     --bg-color: #222f3e;
     --second-bg: #576574;
+    --third-bg: #2e86de;
+    --fourth-bg: #8395a7;
     --color: #eee;
     --second-color: #feca57;
+    --third-color: #333;
 
     --border-radius: 1rem;
     --box-shadow: #000 0.7rem 0.7rem 1.5rem;

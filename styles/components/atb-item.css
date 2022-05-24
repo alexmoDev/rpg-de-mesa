@@ -12,7 +12,7 @@
 }
 
 .atb-item > .ball {
-    background-color: var(--bg-color);
+    background-color: var(--fourth-bg);
     border: 0.3rem solid var(--contrast-color);
     width: 4.3rem;
     height: 4.3rem;
