@@ -15,7 +15,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    transition: margin-left 2.5s ease-out;
+    transition: margin-left 2.5s;
 }
 
 .die-damage button::before{
