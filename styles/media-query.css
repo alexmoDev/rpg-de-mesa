@@ -7,7 +7,7 @@
     }
 
     body > div, body > section {
-        box-shadow: var(--box-shadow);
+        box-shadow: #000 0rem 0rem 2rem;
     }
 
     body > div {

@@ -11,6 +11,7 @@
 
 .input-text.-title {
     font-size: var(--title-font-size);
+    margin-bottom: -0.5rem;
 }
 
 .input-text.-italic {
@@ -19,7 +20,7 @@
 
 .input-text.-textarea {
     width: 100%;
-    background-color: var(--second-bg);
+    box-shadow: #000 0rem 0rem 1rem;
     text-align: left;
     padding: 0.6rem;
     box-sizing: border-box;

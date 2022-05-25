@@ -1,0 +1,16 @@
+.info-display {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    font-size: var(--title-font-size);
+    background-color: var(--second-bg);
+    padding: 1rem 0rem;
+    color: var(--third-color);
+    border-radius: var(--border-radius);
+}
+
+.info-display > .info * {
+    font-size: inherit;
+    line-height: var(--title-font-size);
+}
