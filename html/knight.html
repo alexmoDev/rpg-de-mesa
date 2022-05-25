@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="../styles/import.css">
 </head>
 <body>
-    <section class="main-header main-structure -top -gap">
-        <img class="header" style="max-width: 100%;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
+    <div>
+    <section class="main-header main-structure -gap">
         <input class="input-text -title -italic" type="text" value="Nome da Personagem">
+        <img class="header" style="max-width: 100%;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
         <div class="char-depic">
             <label class="main-label">Aparência/Descrição:</label>
             <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
@@ -28,18 +29,18 @@
         <article class="atb-item">
             <div class="value">
                 <label>Força</label>
-                <input id="forca-inp" class="input-text -thin" type="text" value="15">
-            </div>
-            
-            <div class="ball">
-                <label for="">FOR</label>
-                <input id="for-inp" class="input-text -thin" value="+1" type="text">
+                <input class="input-text -thin" type="text" value="15">
             </div>
 
             <div class="deb">
-            <label for="">Fraco -1</label>
-                <input id="fraco-inp" type="checkbox">
-            </div>               
+                <label>Fraco -1</label>
+                <input class="checkbox" type="checkbox">
+            </div>  
+            
+            <div class="ball">
+                <label>FOR</label>
+                <input class="input-text -thin" value="+1" type="text">
+            </div>
         </article>
 
         <article class="atb-item">
@@ -54,8 +55,8 @@
             </div>
             
             <div class="deb">
-            <label for="">Trêmulo -1</label>
-                <input id="tremulo-inp" type="checkbox">
+                <label for="">Trêmulo -1</label>
+                <input id="tremulo-inp" class="checkbox" type="checkbox">
             </div>
         </article>
 
@@ -72,7 +73,7 @@
             
             <div class="deb">
             <label for="">Doente -1</label>
-                <input id="doente-inp" type="checkbox">
+                <input id="doente-inp" class="checkbox" type="checkbox">
             </div>
         </article>
 
@@ -89,7 +90,7 @@
             
             <div class="deb">
             <label for="">Grogue -1</label>
-                <input id="grogue-inp" type="checkbox">
+                <input id="grogue-inp" class="checkbox" type="checkbox">
             </div>
         </article>
 
@@ -106,7 +107,7 @@
             
             <div class="deb">
             <label for="">Confuso -1</label>
-                <input id="confuso-inp" type="checkbox">
+                <input id="confuso-inp" class="checkbox" type="checkbox">
             </div>
         </article>
 
@@ -123,7 +124,7 @@
             
             <div class="deb">
             <label for="">Marcado -1</label>
-                <input id="marcado-inp" type="checkbox">
+                <input id="marcado-inp" class="checkbox" type="checkbox">
             </div>
         </article>
     </section>
@@ -220,6 +221,7 @@ Ignore o rótulo desengonçada em qualquer armadura que você vestir.</textarea>
 
     <button id="save" style="width: 50%; margin-top: 2rem; border-radius: 0.5rem; border: none;
     background-color: #eee; padding: 0.5rem 0rem;"><img src="../assets/img/disquete.png" style="max-height: 2.5rem;"></button>
+    </div>
 
     <script src="../scripts/local-storage.js"></script>
     <script src="../scripts/main-die.js"></script>

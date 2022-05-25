@@ -1,13 +1,17 @@
 @media screen and (min-width: 500px) {
-    body {
+    body, body > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .initial-pg {
+    body > div, body > section {
         box-shadow: var(--box-shadow);
+    }
+
+    body > div {
+        width: 40%;
     }
 
     .character-icon {
@@ -15,20 +19,12 @@
     }
 
     .main-header {
-        padding-top: 2rem !important;
-        width: 40%;
-        box-shadow: var(--box-shadow);
-        margin-bottom: 1.5rem;
-    }
-
-    .header {
-        display: none;
+        width: 100%;
     }
 
     .atb-sec {
-        width: 40%;
         box-sizing: border-box;
-        box-shadow: var(--box-shadow);
+        width: 100%;
         padding-top: 0.7rem;
     }
 }
