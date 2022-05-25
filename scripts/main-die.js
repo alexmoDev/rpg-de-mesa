@@ -11,9 +11,11 @@ btn.addEventListener('click', roll);
 
 function roll(){
     dice.forEach(function(die){
+        btn.disabled = true;
         die.classList.add("shake");
     });
     setTimeout(function(){
+        btn.disabled = false;
         dice.forEach(function(die){
             die.classList.remove("shake");
         });

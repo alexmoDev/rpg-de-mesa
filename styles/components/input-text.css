@@ -33,6 +33,14 @@
     font-style: italic;
 }
 
-.-thin {
+.input-text.-thin {
     width: 1.5rem;
+}
+
+.input-text.-small{
+    width: 2.75rem;
+}
+
+.input-text.-big {
+    height: 15rem;
 }

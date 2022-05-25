@@ -5,9 +5,8 @@
     width: 100%;
     font-size: var(--second-font-size);
     background-color: var(--third-bg);
-    border-bottom: solid var(--third-bg) 0.5rem;
     color: var(--third-color);
-    padding: 0.5rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .status-core > div * {

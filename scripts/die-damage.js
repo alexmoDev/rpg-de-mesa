@@ -12,6 +12,7 @@ let $dmgDie = document.querySelector(".die-damage button");
 $dmgDie.addEventListener("click", rollDmg);
 
 function rollDmg() {
+    $dmgDie.disabled = true;
     if($dmgDie.classList[0] === 'walk') {
         $dmgDie.classList.add("iShake");;
     } else {
@@ -24,6 +25,7 @@ function rollDmg() {
         $dmgDie.classList.add("walk");
     };
     setTimeout(()=> {
+        $dmgDie.disabled = false;
         $dmgDie.classList.remove("shake");
         $dmgDie.classList.remove("iShake");
         let diceOneValue = Math.floor(Math.random()*10);

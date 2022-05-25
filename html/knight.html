@@ -173,30 +173,32 @@
     </section>
 
     <div class="char-depic">
-        <label class="main-label">Aparência/Descrição:</label>
-        <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
+        <label class="main-label">Anotações:</label>
+        <textarea class="input-text -textarea -big" placeholder="Ex: Encontramos uma estátua em uma sala vazia, o ferreiro nos deve um favor etc"></textarea>
     </div>
 
-    <textarea id="vinculos-txt" class="input-text -border -dark -small">Vínculos:</textarea>
+    <div class="char-depic">
+        <label class="main-label">Vínculos:</label>
+        <textarea class="input-text -textarea" placeholder="Ex: A cavaleira impediu que eu fosse atacado, agora a devo minha vida; o arqueiro aparenta ser uma pessoa ingênua, me encargo de alertar a ele sobre os perigos que nos espreitam etc"></textarea>
+    </div>
 
-    <section class="all-equip">
-        <div class="layout-standart">
-            <div class="info-layout">
-                <label for="">Moedas</label>
-                <input id="coin-inp" type="text" value="22" class="input-text -thin">
-            </div>
-            <div class="second-layout">
-                <label for="">Carga</label>
-                <input id="cargaAtual-inp" class="input-text -thin" type="text" value="4">
-                <span>/</span>
-                <input id="cargaMax-inp" class="input-text -thin" type="text" value="13">
-            </div>
-        </div>
-
-        <textarea id="equip-txt" class="input-text -border -dark -small">Equipamentos:
-armadura de placa (armadura: 2, peso: 3);
-espada (peso: 2, alcance: CaC, +2 penetrante, grotesca, poderosa);</textarea>
+    <section class="info-display -margin">
+        <article class="info">
+            <label>Moedas:</label>
+            <input type="text" value="1" class="input-text -small">
+        </article>
+        <article class="info">
+            <label>Carga:</label>
+            <input type="text" value="0" class="input-text -thin">
+            <span>/</span>
+            <input type="text" value="0" class="input-text -thin">
+        </article>
     </section>
+
+    <div class="char-depic">
+        <label class="main-label">Equipamentos:</label>
+        <textarea class="input-text -textarea -big" placeholder="Ex: Patati etc"></textarea>
+    </div>
 
     <section class="char-moves">
         <h2>Movimentos:</h2>

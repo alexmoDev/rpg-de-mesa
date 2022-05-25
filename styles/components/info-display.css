@@ -7,9 +7,15 @@
     border-top: var(--third-bg) solid 0.5rem;
     border-bottom: var(--third-bg) solid 0.5rem;
     padding: 1rem 0rem;
+    margin-bottom: 3.5rem;
 }
 
 .info-display > .info * {
     font-size: inherit;
     line-height: var(--title-font-size);
+}
+
+.info-display.-margin {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
 }
