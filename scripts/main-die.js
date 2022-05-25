@@ -9,11 +9,7 @@ let btn = document.querySelector('#roll');
 
 btn.addEventListener('click', roll);
 
-function roll(event){
-    if (event !== undefined) {
-        event.preventDefault();
-    };
-
+function roll(){
     dice.forEach(function(die){
         die.classList.add("shake");
     });

@@ -8,23 +8,28 @@ let img = ["../assets/img/1.png",
 "../assets/img/8.png",
 "../assets/img/9.png",
 "../assets/img/0.png"];
-let dmgDice = document.querySelector(".die-damage button");
-let dmgDie = document.querySelector("button");
+let $dmgDie = document.querySelector(".die-damage button");
+$dmgDie.addEventListener("click", rollDmg);
 
-function rollDmg(event){
-    if (event !== undefined) {
-    event.preventDefault();
-    }
-    dmgDice.classList.add("shake");
+function rollDmg() {
+    if($dmgDie.classList[0] === 'walk') {
+        $dmgDie.classList.add("iShake");;
+    } else {
+        $dmgDie.classList.add("shake");;
+    };
 
-    setTimeout(function(){
-        dmgDice.classList.remove("shake");
+    if($dmgDie.classList[0] === 'walk') {
+        $dmgDie.classList.remove("walk");
+    } else {
+        $dmgDie.classList.add("walk");
+    };
+    setTimeout(()=> {
+        $dmgDie.classList.remove("shake");
+        $dmgDie.classList.remove("iShake");
         let diceOneValue = Math.floor(Math.random()*10);
         console.log(diceOneValue);
-        document.querySelector("#falcon").setAttribute("src", img[diceOneValue]);
+        document.querySelector("#dmgDie").setAttribute("src", img[diceOneValue]);
     },
     2500
     );
-}
-rollDmg();
-dmgDie.addEventListener("click", rollDmg);
+};
