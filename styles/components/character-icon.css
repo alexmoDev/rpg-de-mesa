@@ -14,8 +14,7 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    background-color: var(--second-bg);
-    border-radius: var(--border-radius);
+    box-shadow: #000 0rem 0rem 1rem;
     padding: 0.7rem 0rem 1.3rem 0rem;
 }
 

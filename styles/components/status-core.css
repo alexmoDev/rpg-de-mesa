@@ -1,40 +1,37 @@
 .status-core {
-    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-}
-
-.status-core div:nth-child(1) label {
-    font-size: 1.3rem;
-    transform: translateY(0.1rem);
-}
-
-.status-core div:nth-child(odd) {
-    border: var(--contrast-color) dashed 0.3rem;
-    border-radius: 1rem;
-    height: 6vh;
-    width: 30vw;
-    padding: 0rem 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.status-core div:nth-child(2) {
-    background-color: var(--contrast-color);
-    border-radius: 1rem;
-    height: 7vh;
-    width: 17vw;
+    font-size: var(--second-font-size);
+    background-color: var(--third-bg);
+    border-bottom: solid var(--third-bg) 0.5rem;
+    color: var(--third-color);
     padding: 0.5rem 0rem;
+}
 
+.status-core > div * {
+    font-size: inherit;
+    line-height: var(--second-font-size);
+    font-weight: 700;
+    color: inherit;
+}
+
+.status-core > .dmg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    border: #222 solid 0.3rem;
+    border-top-color: #444;
+    border-left-color: #444;
+    border-radius: var(--border-radius);
+    box-shadow: 0rem 0rem 0.5rem #000;
+    padding: 0.3rem;
+    background-color: var(--bg-color);
+    color: var(--color);
 }
 
-.status-core .dano input{
-    width: 2.5rem;
+.status-core > .dmg input {
+    width: 2.3rem;
 }

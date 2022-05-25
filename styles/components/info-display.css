@@ -4,10 +4,9 @@
     width: 100%;
     align-items: center;
     font-size: var(--title-font-size);
-    background-color: var(--second-bg);
+    border-top: var(--third-bg) solid 0.5rem;
+    border-bottom: var(--third-bg) solid 0.5rem;
     padding: 1rem 0rem;
-    color: var(--third-color);
-    border-radius: var(--border-radius);
 }
 
 .info-display > .info * {

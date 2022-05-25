@@ -6,6 +6,7 @@
     margin-bottom: 2.5rem;
     font-size: var(--second-font-size);
     gap: 1.3rem;
+    width: 100%;
 }
 
 .main-die .wrapper {

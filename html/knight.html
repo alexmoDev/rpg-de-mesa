@@ -17,7 +17,7 @@
     <div style="border-radius: var(--border-radius);">
     <section class="main-header main-structure -gap -top">
         <input class="input-text -title -italic" type="text" value="Nome da Personagem">
-        <img class="header" style="max-width: 100%;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
+        <img class="header" style="max-width: 100%; margin-bottom: 3rem;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
         <div class="char-depic">
             <label class="main-label">Aparência/Descrição:</label>
             <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
@@ -150,26 +150,26 @@
     </section>
 
     <section class="status-core">
-        <div>
-            <label for="">PV:</label>
-            <input id="pvAtual-inp" class="input-text -thin" type="text" value="21">
+        <div class="pv">
+            <label>PV:</label>
+            <input class="input-text -thin" type="text" value="21">
             <span>/</span>
-            <input id="pvMax-inp" class="input-text -thin" type="text" value="21">
+            <input class="input-text -thin" type="text" value="21">
         </div>
         
-        <div class="dano">
-            <label for="">Dano</label>
-            <input id="dano-inp" class="input-text -thin" type="text" value="D10">
+        <div class="dmg">
+            <label>Dano</label>
+            <input class="input-text -thin" type="text" value="D10">
         </div>
         
-        <div>
-            <label for="">Armadura:</label>
-            <input id="armor-inp" class="input-text -thin" type="text" value="2">
+        <div class="armor">
+            <label>Armadura:</label>
+            <input class="input-text -thin" type="text" value="2">
         </div>
     </section>
 
     <section class="die-damage">
-        <button><img id="falcon" alt=""></button>
+        <button><img id="dmgDie"></button>
     </section>
 
     <div class="char-depic">
@@ -219,9 +219,6 @@ Ignore o rótulo desengonçada em qualquer armadura que você vestir.</textarea>
         <button id="new"></button>
         <button id="delete"><img src="../assets/img/trash.png" alt=""></button>
     </section>
-
-    <button id="save" style="width: 50%; margin-top: 2rem; border-radius: 0.5rem; border: none;
-    background-color: #eee; padding: 0.5rem 0rem;"><img src="../assets/img/disquete.png" style="max-height: 2.5rem;"></button>
     </div>
 
     <script src="../scripts/local-storage.js"></script>
