@@ -53,19 +53,3 @@
     border-radius: 4rem;
     background-color: var(--contrast-color);
 }
-
-.shake {
-    animation: shake 5s infinite;
-}
-
-@keyframes shake {
-    0%{
-        transform: rotate(-360deg);
-    }
-    50%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
-}
