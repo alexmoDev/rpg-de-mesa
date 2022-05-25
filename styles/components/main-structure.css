@@ -10,3 +10,7 @@
 .main-structure.-gap {
     gap: 1.5rem;
 }
+
+.main-structure.-top {
+    padding-top: 2rem;
+}
