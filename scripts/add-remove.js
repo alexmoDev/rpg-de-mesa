@@ -1,17 +1,7 @@
-let $new = document.querySelector('#new');
-let $remove = document.querySelector('#delete');
-let $moves = document.querySelector('#moves');
+const $new = document.querySelector('#new');
+const $delete = document.querySelector('#delete');
+const $moves = document.querySelector('.new-moves');
 
-$new.addEventListener('click', addMove);
+$new.addEventListener('click', ()=> $moves.insertAdjacentHTML('beforeend', '<textarea class="input-text -textarea" placeholder="(^-^)/"></textarea>'));
 
-function addMove(event) {
-    event.preventDefault();
-    $moves.insertAdjacentHTML('beforeend', '<textarea class="input-text -border -dark -small"></textarea>');
-}
-
-$remove.addEventListener('click', removeMove);
-
-function removeMove(event) {
-    event.preventDefault();
-    $moves.removeChild($moves.lastChild);
-}
+$delete.addEventListener('click', ()=> $moves.removeChild($moves.lastChild));

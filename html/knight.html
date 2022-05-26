@@ -197,30 +197,21 @@
 
     <div class="char-depic">
         <label class="main-label">Equipamentos:</label>
-        <textarea class="input-text -textarea -big" placeholder="Ex: Patati etc"></textarea>
+        <textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc"></textarea>
     </div>
 
-    <section class="char-moves">
-        <h2>Movimentos:</h2>
-        <textarea id="moves-txt" class="input-text -border -dark -small">HUMANO
+    <div class="char-depic">
+        <label class="main-label">MOVIMENTOS:</label>
+        <textarea class="input-text -textarea" placeholder="(^-^)"></textarea>
+    </div>
 
-Uma vez por batalha, você pode rolar novamente um rolamento de dano (seu ou de outra pessoa).</textarea>
-        <div id="moves">
-            <textarea id="moves-txt" class="input-text -border -dark -small">DOBRAR BARRAS, SUSPENDER PORTAIS 
-
-Quando usar força bruta para destruir um objeto inanimado, role+FOR. Com 10+, escolha 3. Com , 7-9 escolha 2:
-
-•Não demora muito
-•Nada de valor é danificado
-•Não provoca uma barulheira absurda
-•Você pode consertar o objeto sem muito esforço.</textarea>
-<textarea id="moves-txt" class="input-text -border -dark -small">FORTIFICADO
-
-Ignore o rótulo desengonçada em qualquer armadura que você vestir.</textarea>
-        </div>
+    <section class="new-moves main-structure -space" style="width: 100%;"></section>
+    <div class='char-moves'>
         <button id="new"></button>
-        <button id="delete"><img src="../assets/img/trash.png" alt=""></button>
-    </section>
+        <button id="delete"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
+    </div>
+
+    <button class="save-btn"><img src="../assets/img/disquete.png" alt="Disquete"></button>
     </div>
 
     <script src="../scripts/local-storage.js"></script>

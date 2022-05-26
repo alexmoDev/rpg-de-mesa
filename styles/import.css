@@ -3,6 +3,7 @@
 @import 'reset.css';
 @import 'variables.css';
 @import 'elements.css';
+@import 'components/save-btn.css';
 @import 'components/main-structure.css';
 @import 'components/pg-title.css';
 @import 'components/character-icon.css';

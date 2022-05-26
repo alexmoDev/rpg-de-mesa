@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    box-shadow: #000 0rem 0rem 1rem;
+    background-color: var(--second-bg);
     padding: 0.7rem 0rem 1.3rem 0rem;
 }
 
