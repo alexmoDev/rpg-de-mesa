@@ -18,3 +18,11 @@
 .main-structure.-space {
     padding: 0rem 0rem 2rem;
 }
+
+.main-structure.main-header {
+    padding-bottom: 1rem !important;
+}
+
+.main-structure.new-moves {
+    margin-top: 2.5rem;
+}

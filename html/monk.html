@@ -4,215 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Monja</title>
+    <title>A Cavalaria</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
 
     <link rel="stylesheet" href="../styles/import.css">
 </head>
 <body>
-    <form>
-        <h1 class="pg-title -larger">A Monja 10 12 16 15 8 5</h1>
-        <input id="name-inp" class="input-text" type="text" value="Nome da Personagem">
-        <textarea id="look-txt" class="input-text -border -dark -small">Aparência/Descrição:</textarea>
+    <div style="border-radius: var(--border-radius);">
+    <section class="main-header main-structure -gap -top">
+        <input class="input-text -title -italic" type="text" value="Nome da Personagem">
+        <img class="header" style="max-width: 100%; margin-bottom: 3.5rem;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
+        <div class="char-depic">
+            <label class="main-label">Aparência/Descrição:</label>
+            <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
+        </div>
+    </section>
 
-        <section class="atb-sec">
-            <article class="atb-item">
-                <div class="value">
-                    <label>Força</label>
-                    <input id="forca-inp" class="input-text -thin" type="text" value="15">
-                </div>
-                
-                <div class="ball">
-                    <label for="">FOR</label>
-                    <input id="for-inp" class="input-text -thin" value="+1" type="text">
-                </div>
-
-                <div class="deb">
-                <label for="">Fraco -1</label>
-                    <input id="fraco-inp" type="checkbox">
-                </div>               
-            </article>
-
-            <article class="atb-item">
-                <div class="value">
-                    <label>Destreza</label>
-                    <input id="destreza-inp" class="input-text -thin" type="text" value="8">
-                </div>
-
-                <div class="ball">
-                    <label for="">DES</label>
-                    <input id="des-inp" class="input-text -thin" value="-1" type="text">
-                </div>
-                
-                <div class="deb">
-                <label for="">Trêmulo -1</label>
-                    <input id="tremulo-inp" type="checkbox">
-                </div>
-            </article>
-
-            <article class="atb-item">
-                <div class="value">
-                    <label>Constituição</label>
-                    <input id="const-inp" class="input-text -thin" type="text" value="11">
-                </div>
-
-                <div class="ball">
-                    <label for="">CON</label>
-                    <input id="con-inp" class="input-text -thin" value="+0" type="text">
-                </div>
-                
-                <div class="deb">
-                <label for="">Doente -1</label>
-                    <input id="doente-inp" type="checkbox">
-                </div>
-            </article>
-
-            <article class="atb-item">
-                <div class="value">
-                    <label>Inteligência</label>
-                    <input id="inteli-inp" class="input-text -thin" type="text" value="6">
-                </div>
-                
-                <div class="ball">
-                    <label for="">INT</label>
-                    <input id="int-inp" class="input-text -thin" value="-1" type="text" >
-                </div>
-                
-                <div class="deb">
-                <label for="">Grogue -1</label>
-                    <input id="grogue-inp" type="checkbox">
-                </div>
-            </article>
-
-            <article class="atb-item">
-                <div class="value">
-                    <label>Sabedoria</label>
-                    <input id="sabedoria-inp" class="input-text -thin" type="text" value="10">
-                </div>
-                
-                <div class="ball">
-                    <label for="">SAB</label>
-                    <input id="sab-inp" class="input-text -thin" value="+0" type="text">
-                </div>
-                
-                <div class="deb">
-                <label for="">Confuso -1</label>
-                    <input id="confuso-inp" type="checkbox">
-                </div>
-            </article>
-
-            <article class="atb-item">
-                <div class="value">
-                    <label>Carisma</label>
-                    <input id="carisma-inp" class="input-text -thin" type="text" value="7">
-                </div>
-                
-                <div class="ball">
-                    <label for="">CAR</label>
-                    <input id="car-inp" class="input-text -thin" value="-1" type="text">
-                </div>
-                
-                <div class="deb">
-                <label for="">Marcado -1</label>
-                    <input id="marcado-inp" type="checkbox">
-                </div>
-            </article>
-        </section>
-
-        <textarea id="notes-txt" class="input-text -border -dark -small">Anotações:</textarea>
-
-        <section class="layout-standart">
-            <div class="level info-layout">
-                <label for="">Nível</label>
-                <input id="level-inp" type="text" value="1" class="input-text -thin">
+    <h1 class="main-label">ATRIBUTOS:</h1>
+    <section class="atb-sec">
+        <article class="atb-item">
+            <div class="value">
+                <label>Força</label>
+                <input oninput="calcMod(this.value, 0)" class="input-text -thin" type="text" value="16">
             </div>
-            <div class="second-layout">
-                <label for="">XP</label>
-                <input id="xp-inp" type="text" value="0" class="input-text -thin">
-            </div>
-        </section>
 
-        <section class="status-core">
-            <div>
-                <label for="">PV:</label>
-                <input id="pvAtual-inp" class="input-text -thin" type="text" value="21">
-                <span>/</span>
-                <input id="pvMax-inp" class="input-text -thin" type="text" value="21">
+            <div class="deb">
+                <label>Fraco -1</label>
+                <input onchange="redMod(this.checked, 0)" class="checkbox" type="checkbox">
+            </div>  
+            
+            <div class="ball">
+                <label>FOR</label>
+                <input class="input-text -thin" value="+2" type="text">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Destreza</label>
+                <input oninput="calcMod(this.value, 1)" class="input-text -thin" type="text" value="12">
+            </div>
+
+            <div class="ball">
+                <label for="">DES</label>
+                <input class="input-text -thin" value="+0" type="text">
             </div>
             
-            <div class="dano">
-                <label for="">Dano</label>
-                <input id="dano-inp" class="input-text -thin" type="text" value="D10">
+            <div class="deb">
+                <label>Trêmulo -1</label>
+                <input onchange="redMod(this.checked, 1)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Constituição</label>
+                <input oninput="calcMod(this.value, 2)" class="input-text -thin" type="text" value="15">
+            </div>
+
+            <div class="ball">
+                <label>CON</label>
+                <input class="input-text -thin" value="+1" type="text">
             </div>
             
-            <div>
-                <label for="">Armadura:</label>
-                <input id="armor-inp" class="input-text -thin" type="text" value="2">
+            <div class="deb">
+            <label>Doente -1</label>
+                <input onchange="redMod(this.checked, 2)" class="checkbox" type="checkbox">
             </div>
-        </section>
+        </article>
 
-        <section class="die-damage">
-            <button><img id="falcon" alt=""></button>
-        </section>
-
-        <textarea id="vinculos-txt" class="input-text -border -dark -small">Vínculos:</textarea>
-
-        <section class="all-equip">
-            <div class="layout-standart">
-                <div class="info-layout">
-                    <label for="">Moedas</label>
-                    <input id="coin-inp" type="text" value="22" class="input-text -thin">
-                </div>
-                <div class="second-layout">
-                    <label for="">Carga</label>
-                    <input id="cargaAtual-inp" class="input-text -thin" type="text" value="4">
-                    <span>/</span>
-                    <input id="cargaMax-inp" class="input-text -thin" type="text" value="13">
-                </div>
+        <article class="atb-item">
+            <div class="value">
+                <label>Inteligência</label>
+                <input oninput="calcMod(this.value, 3)" class="input-text -thin" type="text" value="8">
             </div>
-
-            <textarea id="equip-txt" class="input-text -border -dark -small">Equipamentos:
-armadura de placa (armadura: 2, peso: 3);
-espada (peso: 2, alcance: CaC, +2 penetrante, grotesca, poderosa);</textarea>
-        </section>
-
-        <section class="main-die">
-            <div class="container">
-                <div class="wrapper">
-                    <img  id="die-1">
-                    <img  id="die-2">
-                </div>
-                <p id="total"></p>
-                <button id="roll">ROLAR DADO</button>
+            
+            <div class="ball">
+                <label>INT</label>
+                <input class="input-text -thin" value="-1" type="text" >
             </div>
-        </section>
-
-        <section class="char-moves">
-            <h2>Movimentos:</h2>
-            <textarea id="moves-txt" class="input-text -border -dark -small">HUMANO
-
-Uma vez por batalha, você pode rolar novamente um rolamento de dano (seu ou de outra pessoa).</textarea>
-            <div id="moves">
-                <textarea id="moves-txt" class="input-text -border -dark -small">DOBRAR BARRAS, SUSPENDER PORTAIS 
-
-Quando usar força bruta para destruir um objeto inanimado, role+FOR. Com 10+, escolha 3. Com , 7-9 escolha 2:
-
-•Não demora muito
-•Nada de valor é danificado
-•Não provoca uma barulheira absurda
-•Você pode consertar o objeto sem muito esforço.</textarea>
-<textarea id="moves-txt" class="input-text -border -dark -small">FORTIFICADO
-
-Ignore o rótulo desengonçada em qualquer armadura que você vestir.</textarea>
+            
+            <div class="deb">
+            <label>Grogue -1</label>
+                <input onchange="redMod(this.checked, 3)" class="checkbox" type="checkbox">
             </div>
-            <button id="new"></button>
-            <button id="delete"><img src="../assets/img/trash.png" alt=""></button>
-        </section>
+        </article>
 
-        <button id="save" style="width: 50%; margin-top: 2rem; border-radius: 0.5rem; border: none;
-        background-color: #eee; padding: 0.5rem 0rem;"><img src="../assets/img/disquete.png" style="max-height: 2.5rem;"></button>
-    </form>
-    
+        <article class="atb-item">
+            <div class="value">
+                <label>Sabedoria</label>
+                <input oninput="calcMod(this.value, 4)" class="input-text -thin" type="text" value="13">
+            </div>
+            
+            <div class="ball">
+                <label>SAB</label>
+                <input class="input-text -thin" value="+1" type="text">
+            </div>
+            
+            <div class="deb">
+            <label>Confuso -1</label>
+                <input onchange="redMod(this.checked, 4)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Carisma</label>
+                <input oninput="calcMod(this.value, 5)" class="input-text -thin" type="text" value="9">
+            </div>
+            
+            <div class="ball">
+                <label>CAR</label>
+                <input class="input-text -thin" value="+0" type="text">
+            </div>
+            
+            <div class="deb">
+            <label>Marcado -1</label>
+                <input onchange="redMod(this.checked, 5)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+    </section>
+
+    <section class="main-die">
+        <div class="wrapper">
+            <img  id="die-1">
+            <img  id="die-2">
+        </div>
+        <p id="total"></p>
+        <button id="roll">ROLAR DADOS</button>
+    </section>
+
+    <section class="info-display">
+        <article class="info">
+            <label>Nível:</label>
+            <input type="text" value="1" class="input-text -thin">
+        </article>
+        <article class="info">
+            <label>Exp:</label>
+            <input type="text" value="0" class="input-text -thin">
+        </article>
+    </section>
+
+    <section class="status-core">
+        <div class="pv">
+            <label>PV:</label>
+            <input class="input-text -thin" type="text" value="25">
+            <span>/</span>
+            <input class="input-text -thin" type="text" value="25">
+        </div>
+        
+        <div class="dmg">
+            <label>Dano</label>
+            <input class="input-text -thin" type="text" value="D10">
+        </div>
+        
+        <div class="armor">
+            <label>Armadura:</label>
+            <input class="input-text -thin" type="text" value="2">
+        </div>
+    </section>
+
+    <section class="die-damage">
+        <button><img id="dmgDie" src="../assets/img/8.png"></button>
+    </section>
+
+    <div class="char-depic">
+        <label class="main-label">Anotações:</label>
+        <textarea class="input-text -textarea -big" placeholder="Ex: Encontramos uma estátua em uma sala vazia, o ferreiro nos deve um favor etc"></textarea>
+    </div>
+
+    <div class="char-depic">
+        <label class="main-label">Vínculos:</label>
+        <textarea class="input-text -textarea" placeholder="Ex: A cavaleira impediu que eu fosse atacado, agora a devo minha vida; o arqueiro aparenta ser uma pessoa ingênua, me encargo de alertar a ele sobre os perigos que nos espreitam etc"></textarea>
+    </div>
+
+    <section class="info-display -margin">
+        <article class="info">
+            <label>Moedas:</label>
+            <input type="text" value="22" class="input-text -small">
+        </article>
+        <article class="info">
+            <label>Carga:</label>
+            <input type="text" value="3" class="input-text -thin">
+            <span>/</span>
+            <input type="text" value="14" class="input-text -thin">
+        </article>
+    </section>
+
+    <div class="char-depic">
+        <label class="main-label">Equipamentos:</label>
+<textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc">Armadura de placa (armadura 2, peso 3);
+Espada (peso 2, distância: CaC, +2 penetrante, grotesca, poderosa);
+</textarea>
+    </div>
+
+    <h3 style="margin-top: 4rem;" class="main-label">MOVIMENTOS:</h3>
+<textarea class="input-text -textarea" placeholder="(^-^)">HUMANO
+Uma vez por batalha, você pode rolar novamente um rolamento de dano (seu ou de outra pessoa).
+</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">DOBRAR BARRAS, SUSPENDER PORTAIS
+Quando usar força bruta para destruir um objeto inanimado, role+FOR. Com 10+, escolha 3. Com 7-9, escolha 2.
+•	 Não demora muito
+•	 Nada de valor é danificado
+•	 Não provoca uma barulheira absurda
+•	 Você pode consertar o objeto sem muito esforço.
+</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">FORTIFICADO
+Ignore o rótulo 'desengonçada' em qualquer armadura que você vestir.
+</textarea>
+
+    <section class="new-moves main-structure -space" style="width: 100%;"></section>
+    <div class='char-moves'>
+        <button id="new"></button>
+        <button id="delete"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
+    </div>
+
+    <button class="save-btn"><img src="../assets/img/disquete.png" alt="Disquete"></button>
+    </div>
+
     <script src="../scripts/local-storage.js"></script>
+    <script src="../scripts/atb-item.js"></script>
     <script src="../scripts/main-die.js"></script>
     <script src="../scripts/die-damage.js"></script>
     <script src="../scripts/add-remove.js"></script>

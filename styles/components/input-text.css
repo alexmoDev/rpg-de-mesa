@@ -26,6 +26,7 @@
     box-sizing: border-box;
     color: var(--second-color);
     height: 12rem;
+    line-height: 1.3rem;
 }
 
 .input-text.-textarea::placeholder {
@@ -43,4 +44,8 @@
 
 .input-text.-big {
     height: 15rem;
+}
+
+.input-text.-void {
+    margin-top: 2.5rem;
 }
