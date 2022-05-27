@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Cavalaria</title>
+    <title>O Monastério</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
@@ -17,7 +17,7 @@
     <div style="border-radius: var(--border-radius);">
     <section class="main-header main-structure -gap -top">
         <input class="input-text -title -italic" type="text" value="Nome da Personagem">
-        <img class="header" style="max-width: 100%; margin-bottom: 3.5rem;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
+        <img class="header" style="max-width: 100%; margin-bottom: 3.5rem;" src="../assets/img/monk-landscape.jpg" alt="Medieval Landscape">
         <div class="char-depic">
             <label class="main-label">Aparência/Descrição:</label>
             <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
@@ -29,7 +29,7 @@
         <article class="atb-item">
             <div class="value">
                 <label>Força</label>
-                <input oninput="calcMod(this.value, 0)" class="input-text -thin" type="text" value="16">
+                <input oninput="calcMod(this.value, 0)" class="input-text -thin" type="text" value="15">
             </div>
 
             <div class="deb">
@@ -39,7 +39,7 @@
             
             <div class="ball">
                 <label>FOR</label>
-                <input class="input-text -thin" value="+2" type="text">
+                <input class="input-text -thin" value="+1" type="text">
             </div>
         </article>
 
@@ -63,7 +63,7 @@
         <article class="atb-item">
             <div class="value">
                 <label>Constituição</label>
-                <input oninput="calcMod(this.value, 2)" class="input-text -thin" type="text" value="15">
+                <input oninput="calcMod(this.value, 2)" class="input-text -thin" type="text" value="13">
             </div>
 
             <div class="ball">
@@ -80,12 +80,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Inteligência</label>
-                <input oninput="calcMod(this.value, 3)" class="input-text -thin" type="text" value="8">
+                <input oninput="calcMod(this.value, 3)" class="input-text -thin" type="text" value="9">
             </div>
             
             <div class="ball">
                 <label>INT</label>
-                <input class="input-text -thin" value="-1" type="text" >
+                <input class="input-text -thin" value="+0" type="text" >
             </div>
             
             <div class="deb">
@@ -97,12 +97,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Sabedoria</label>
-                <input oninput="calcMod(this.value, 4)" class="input-text -thin" type="text" value="13">
+                <input oninput="calcMod(this.value, 4)" class="input-text -thin" type="text" value="16">
             </div>
             
             <div class="ball">
                 <label>SAB</label>
-                <input class="input-text -thin" value="+1" type="text">
+                <input class="input-text -thin" value="+2" type="text">
             </div>
             
             <div class="deb">
@@ -114,12 +114,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Carisma</label>
-                <input oninput="calcMod(this.value, 5)" class="input-text -thin" type="text" value="9">
+                <input oninput="calcMod(this.value, 5)" class="input-text -thin" type="text" value="8">
             </div>
             
             <div class="ball">
                 <label>CAR</label>
-                <input class="input-text -thin" value="+0" type="text">
+                <input class="input-text -thin" value="-1" type="text">
             </div>
             
             <div class="deb">
@@ -152,24 +152,24 @@
     <section class="status-core">
         <div class="pv">
             <label>PV:</label>
-            <input class="input-text -thin" type="text" value="25">
+            <input class="input-text -thin" type="text" value="21">
             <span>/</span>
-            <input class="input-text -thin" type="text" value="25">
+            <input class="input-text -thin" type="text" value="21">
         </div>
         
         <div class="dmg">
             <label>Dano</label>
-            <input class="input-text -thin" type="text" value="D10">
+            <input class="input-text -thin" type="text" value="D8">
         </div>
         
         <div class="armor">
             <label>Armadura:</label>
-            <input class="input-text -thin" type="text" value="2">
+            <input class="input-text -thin" type="text" value="1">
         </div>
     </section>
 
-    <section class="die-damage">
-        <button><img id="dmgDie" src="../assets/img/8.png"></button>
+    <section class="die-damage -d8">
+        <button><img id="dmgDie" src="../assets/img/d8/d8 (8).png"></button>
     </section>
 
     <div class="char-depic">
@@ -179,45 +179,40 @@
 
     <div class="char-depic">
         <label class="main-label">Vínculos:</label>
-        <textarea class="input-text -textarea" placeholder="Ex: A cavaleira impediu que eu fosse atacado, agora a devo minha vida; o arqueiro aparenta ser uma pessoa ingênua, me encargo de alertar a ele sobre os perigos que nos espreitam etc"></textarea>
+<textarea class="input-text -textarea" placeholder="Ex: A cavaleira impediu que eu fosse atacado, agora a devo minha vida;
+O arqueiro aparenta ser uma pessoa ingênua, me encargo de alertar a ele sobre os perigos que nos espreitam."></textarea>
     </div>
 
     <section class="info-display -margin">
         <article class="info">
             <label>Moedas:</label>
-            <input type="text" value="22" class="input-text -small">
+            <input type="text" value="15" class="input-text -small">
         </article>
         <article class="info">
             <label>Carga:</label>
-            <input type="text" value="3" class="input-text -thin">
+            <input type="text" value="0" class="input-text -thin">
             <span>/</span>
-            <input type="text" value="14" class="input-text -thin">
+            <input type="text" value="7" class="input-text -thin">
         </article>
     </section>
 
     <div class="char-depic">
         <label class="main-label">Equipamentos:</label>
-<textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc">Armadura de placa (armadura 2, peso 3);
-Espada (peso 2, distância: CaC, +2 penetrante, grotesca, poderosa);
-</textarea>
+        <textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc"></textarea>
     </div>
 
     <h3 style="margin-top: 4rem;" class="main-label">MOVIMENTOS:</h3>
-<textarea class="input-text -textarea" placeholder="(^-^)">HUMANO
-Uma vez por batalha, você pode rolar novamente um rolamento de dano (seu ou de outra pessoa).
-</textarea>
+<textarea class="input-text -textarea" placeholder="(^-^)">ADAPTÁVEL
+Você cresceu em torno de pessoas diferentes de você, treinando para ser como elas. Você pode usar o movimento racial de um dos jogadores com quem você tem um Vínculo. Quando você resolver esse vínculo, você poderá mudar para um movimento racial de outro jogador com quem você tenha um vínculo.</textarea>
 
-<textarea class="input-text -textarea -void" placeholder="(^-^)">DOBRAR BARRAS, SUSPENDER PORTAIS
-Quando usar força bruta para destruir um objeto inanimado, role+FOR. Com 10+, escolha 3. Com 7-9, escolha 2.
-•	 Não demora muito
-•	 Nada de valor é danificado
-•	 Não provoca uma barulheira absurda
-•	 Você pode consertar o objeto sem muito esforço.
-</textarea>
+<textarea class="input-text -textarea -void" placeholder="(^-^)">GRAÇA MORTAL
+Enquanto você estiver em pé e livre (não desajeitado, não sobrecarregado, etc.), você tem +1 de armadura.</textarea>
 
-<textarea class="input-text -textarea -void" placeholder="(^-^)">FORTIFICADO
-Ignore o rótulo 'desengonçada' em qualquer armadura que você vestir.
-</textarea>
+<textarea class="input-text -textarea -void" placeholder="(^-^)">MEDITAÇÃO
+Quando você passar algum tempo contemplando o silêncio (cerca de uma hora ou mais), perca todo o Fluxo e role +SAB. Com 10+, ganhe 3 de Fluxo. Com 7-9, ganhe 2, e com 6, ganhe 1, além de qualquer outra coisa que o narrador possa acrescentar. Gaste o fluxo (máximo: 1) para ganhar +1 em uma rolagem.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">POSTURA MARCIAL
+Através de muito estudo e dedicação durante os treinos, você aprendeu o suficiente para desenvolver a sua própria técnica marcial. Apartir de agora, quando um golpe (CaC) for bem aplicado, causará o efeito de atordoamento aos alvos inimigos.</textarea>
 
     <section class="new-moves main-structure -space" style="width: 100%;"></section>
     <div class='char-moves'>
@@ -231,7 +226,7 @@ Ignore o rótulo 'desengonçada' em qualquer armadura que você vestir.
     <script src="../scripts/local-storage.js"></script>
     <script src="../scripts/atb-item.js"></script>
     <script src="../scripts/main-die.js"></script>
-    <script src="../scripts/die-damage.js"></script>
+    <script src="../scripts/d8.js"></script>
     <script src="../scripts/add-remove.js"></script>
 </body>
 </html>

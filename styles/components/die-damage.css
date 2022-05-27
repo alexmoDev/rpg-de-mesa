@@ -19,7 +19,7 @@
     transition: margin-left 2.5s;
 }
 
-.die-damage button::before{
+.die-damage.-d10 button::before{
     content: '';
     background-color: white;
     width: 94px;
@@ -29,6 +29,10 @@
     bottom: 22px;
     border-radius: 4rem;
     left: 8.5px;
+}
+
+.die-damage.-d8 img{
+    max-width: 5.3rem;
 }
 
 .walk {

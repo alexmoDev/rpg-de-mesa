@@ -1,13 +1,13 @@
-let img = ["../assets/img/1.png",
-"../assets/img/2.png",
-"../assets/img/3.png",
-"../assets/img/4.png",
-"../assets/img/5.png",
-"../assets/img/6.png",
-"../assets/img/7.png",
-"../assets/img/8.png",
-"../assets/img/9.png",
-"../assets/img/0.png"];
+let img = ["../assets/img/d10/1.png",
+"../assets/img/d10/2.png",
+"../assets/img/d10/3.png",
+"../assets/img/d10/4.png",
+"../assets/img/d10/5.png",
+"../assets/img/d10/6.png",
+"../assets/img/d10/7.png",
+"../assets/img/d10/8.png",
+"../assets/img/d10/9.png",
+"../assets/img/d10/0.png"];
 let $dmgDie = document.querySelector(".die-damage button");
 $dmgDie.addEventListener("click", rollDmg);
 
