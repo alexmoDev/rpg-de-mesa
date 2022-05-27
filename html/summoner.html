@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evocadores</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="../styles/import.css">
+</head>
+<body>
+    <div style="border-radius: var(--border-radius);">
+    <section class="main-header main-structure -gap -top">
+        <input class="input-text -title -italic" type="text" value="Nome da Personagem">
+        <img class="header" style="max-width: 100%; margin-bottom: 3.5rem;" src="../assets/img/element-landscape.jpg" alt="Medieval Landscape">
+        <div class="char-depic">
+            <label class="main-label">Aparência/Descrição:</label>
+            <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
+        </div>
+    </section>
+
+    <h1 class="main-label">ATRIBUTOS:</h1>
+    <section class="atb-sec">
+        <article class="atb-item">
+            <div class="value">
+                <label>Força</label>
+                <input oninput="calcMod(this.value, 0)" class="input-text -thin" type="text" value="15">
+            </div>
+
+            <div class="deb">
+                <label>Fraco -1</label>
+                <input onchange="redMod(this.checked, 0)" class="checkbox" type="checkbox">
+            </div>  
+            
+            <div class="ball">
+                <label>FOR</label>
+                <input class="input-text -thin" value="+1" type="text">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Destreza</label>
+                <input oninput="calcMod(this.value, 1)" class="input-text -thin" type="text" value="12">
+            </div>
+
+            <div class="ball">
+                <label for="">DES</label>
+                <input class="input-text -thin" value="+0" type="text">
+            </div>
+            
+            <div class="deb">
+                <label>Trêmulo -1</label>
+                <input onchange="redMod(this.checked, 1)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Constituição</label>
+                <input oninput="calcMod(this.value, 2)" class="input-text -thin" type="text" value="13">
+            </div>
+
+            <div class="ball">
+                <label>CON</label>
+                <input class="input-text -thin" value="+1" type="text">
+            </div>
+            
+            <div class="deb">
+            <label>Doente -1</label>
+                <input onchange="redMod(this.checked, 2)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Inteligência</label>
+                <input oninput="calcMod(this.value, 3)" class="input-text -thin" type="text" value="9">
+            </div>
+            
+            <div class="ball">
+                <label>INT</label>
+                <input class="input-text -thin" value="+0" type="text" >
+            </div>
+            
+            <div class="deb">
+            <label>Grogue -1</label>
+                <input onchange="redMod(this.checked, 3)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Sabedoria</label>
+                <input oninput="calcMod(this.value, 4)" class="input-text -thin" type="text" value="16">
+            </div>
+            
+            <div class="ball">
+                <label>SAB</label>
+                <input class="input-text -thin" value="+2" type="text">
+            </div>
+            
+            <div class="deb">
+            <label>Confuso -1</label>
+                <input onchange="redMod(this.checked, 4)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+
+        <article class="atb-item">
+            <div class="value">
+                <label>Carisma</label>
+                <input oninput="calcMod(this.value, 5)" class="input-text -thin" type="text" value="8">
+            </div>
+            
+            <div class="ball">
+                <label>CAR</label>
+                <input class="input-text -thin" value="-1" type="text">
+            </div>
+            
+            <div class="deb">
+            <label>Marcado -1</label>
+                <input onchange="redMod(this.checked, 5)" class="checkbox" type="checkbox">
+            </div>
+        </article>
+    </section>
+
+    <section class="main-die">
+        <div class="wrapper">
+            <img  id="die-1">
+            <img  id="die-2">
+        </div>
+        <p id="total"></p>
+        <button id="roll">ROLAR DADOS</button>
+    </section>
+
+    <section class="info-display">
+        <article class="info">
+            <label>Nível:</label>
+            <input type="text" value="1" class="input-text -thin">
+        </article>
+        <article class="info">
+            <label>Exp:</label>
+            <input type="text" value="0" class="input-text -thin">
+        </article>
+    </section>
+
+    <section class="status-core">
+        <div class="pv">
+            <label>PV:</label>
+            <input class="input-text -thin" type="text" value="21">
+            <span>/</span>
+            <input class="input-text -thin" type="text" value="21">
+        </div>
+        
+        <div class="dmg">
+            <label>Dano</label>
+            <input class="input-text -thin" type="text" value="D8">
+        </div>
+        
+        <div class="armor">
+            <label>Armadura:</label>
+            <input class="input-text -thin" type="text" value="1">
+        </div>
+    </section>
+
+    <section class="die-damage -d8">
+        <button><img id="dmgDie" src="../assets/img/d8/d8 (8).png"></button>
+    </section>
+
+    <div class="char-depic">
+        <label class="main-label">Anotações:</label>
+        <textarea class="input-text -textarea -big" placeholder="Ex: Encontramos uma estátua em uma sala vazia, o ferreiro nos deve um favor etc"></textarea>
+    </div>
+
+    <div class="char-depic">
+        <label class="main-label">Vínculos:</label>
+<textarea class="input-text -textarea" placeholder="Ex: A cavaleira impediu que eu fosse atacado, agora a devo minha vida;
+O arqueiro aparenta ser uma pessoa ingênua, me encargo de alertar a ele sobre os perigos que nos espreitam."></textarea>
+    </div>
+
+    <section class="info-display -margin">
+        <article class="info">
+            <label>Moedas:</label>
+            <input type="text" value="15" class="input-text -small">
+        </article>
+        <article class="info">
+            <label>Carga:</label>
+            <input type="text" value="0" class="input-text -thin">
+            <span>/</span>
+            <input type="text" value="7" class="input-text -thin">
+        </article>
+    </section>
+
+    <div class="char-depic">
+        <label class="main-label">Equipamentos:</label>
+        <textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc"></textarea>
+    </div>
+
+    <h3 style="margin-top: 4rem;" class="main-label">MOVIMENTOS:</h3>
+<textarea class="input-text -textarea" placeholder="(^-^)">ADAPTÁVEL
+Você cresceu em torno de pessoas diferentes de você, treinando para ser como elas. Você pode usar o movimento racial de um dos jogadores com quem você tem um Vínculo. Quando você resolver esse vínculo, você poderá mudar para um movimento racial de outro jogador com quem você tenha um vínculo.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">GRAÇA MORTAL
+Enquanto você estiver em pé e livre (não desajeitado, não sobrecarregado, etc.), você tem +1 de armadura.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">MEDITAÇÃO
+Quando você passar algum tempo contemplando o silêncio (cerca de uma hora ou mais), perca todo o Fluxo e role +SAB. Com 10+, ganhe 3 de Fluxo. Com 7-9, ganhe 2, e com 6, ganhe 1, além de qualquer outra coisa que o narrador possa acrescentar. Gaste o fluxo (máximo: 1) para ganhar +1 em uma rolagem.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">POSTURA MARCIAL
+Através de muito estudo e dedicação durante os treinos, você aprendeu o suficiente para desenvolver a sua própria técnica marcial. Apartir de agora, quando um golpe (CaC) for bem aplicado, causará o efeito de atordoamento aos alvos inimigos.</textarea>
+
+    <section class="new-moves main-structure -space" style="width: 100%;"></section>
+    <div class='char-moves'>
+        <button id="new"></button>
+        <button id="delete"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
+    </div>
+
+    <button class="save-btn"><img src="../assets/img/disquete.png" alt="Disquete"></button>
+    </div>
+
+    <script src="../scripts/local-storage.js"></script>
+    <script src="../scripts/atb-item.js"></script>
+    <script src="../scripts/main-die.js"></script>
+    <script src="../scripts/d8.js"></script>
+    <script src="../scripts/add-remove.js"></script>
+</body>
+</html>

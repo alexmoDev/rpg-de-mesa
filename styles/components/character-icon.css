@@ -6,7 +6,7 @@
 }
 
 .character-icon > h2 {
-    margin: 1rem 0rem;
+    margin: 1rem;
     font-size: var(--second-font-size);
     color: var(--second-color);
 }
@@ -14,7 +14,7 @@
 .character-icon > div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 1.5rem;
     padding: 0.7rem 0rem 1.3rem 0rem;
 }
@@ -22,5 +22,5 @@
 .character-icon img {
     max-width: 170px;
     border-radius: 0.5rem;
-    box-shadow: #000 1rem 1rem 1rem;
+    box-shadow: #000 0.7rem 0.7rem 0.7rem;
 }

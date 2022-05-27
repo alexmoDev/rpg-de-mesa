@@ -31,4 +31,8 @@
     .main-die {
         width: 80%;
     }
+
+    .character-icon > h2 {
+        margin-left: 0rem !important;
+    }
 }
