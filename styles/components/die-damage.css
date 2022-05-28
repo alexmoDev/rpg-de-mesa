@@ -32,7 +32,12 @@
 }
 
 .die-damage.-d8 img{
-    max-width: 5.3rem;
+    max-width: 5.7rem;
+    margin-bottom: 1rem;
+}
+
+.die-damage.-d4 img {
+    margin-bottom: 1rem;
 }
 
 .walk {

@@ -15,12 +15,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0.7rem 0rem 1.3rem 0rem;
 }
 
 .character-icon img {
-    max-width: 170px;
+    max-width: 183px;
     border-radius: 0.5rem;
-    box-shadow: #000 0.7rem 0.7rem 0.7rem;
+    box-shadow: #000 0rem 0rem 1rem;
 }
