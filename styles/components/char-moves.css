@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.char-moves #new::after {
+.char-moves .new::after {
     content: '';
     height: 2.3rem;
     width: 0.5rem;
@@ -30,7 +30,7 @@
     background-color: #fff;
 }
 
-.char-moves #new::before {
+.char-moves .new::before {
     content: '';
     height: 2.3rem;
     width: 0.5rem;

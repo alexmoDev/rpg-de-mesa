@@ -219,7 +219,7 @@ Você pode desfazer um feitiço contínuo imediatamente, e utilizar a energia en
 
     <section class="new-moves main-structure -space" style="width: 100%;"></section>
     <div class='char-moves'>
-        <button id="new"></button>
+        <button class="new" id="new"></button>
         <button id="delete"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
     </div>
 
@@ -230,11 +230,24 @@ Um item tocado por você brilha com luz arcana, com a mesma intensidade de uma t
 <textarea class="input-text -textarea -void" placeholder="(^-^)">CRIADO MUDO
 Este feitiço conjura um construto simples que não é capaz de fazer nada a não ser carregar itens. Ele possui Carga 3 e consegue carregar qualquer coisa que você entregar a ele, mas não é capaz de ir buscar objetos por conta própria. Caso o servo receba dano ou saia de sua presença, ele se desfaz imediatamente. De outra forma, ele o serve até que o feitiço seja encerrado.</textarea>
 
-<textarea class="input-text -textarea -void" placeholder="(^-^)">PRESTIDIGITAÇÃO
-Você é capaz de fazer algumas peripécias com sua magia. Se tocar um item durante a conjuração deste truque, você poderá fazer alterações cosméticas a ele: limpá-lo, sujá-lo, resfriá-lo, aquecê-lo, mudar seu sabor ou sua cor. Se conjurar este feitiço sem tocar um item, poderá invocar pequenas ilusões, cujo tamanho não ultrapasse o seu. As imagens criadas por Prestidigitação são simples e obviamente ilusórias – elas não enganarão ninguém, mas poderão entreter as pessoas.</textarea>
-
 <textarea class="input-text -textarea -void" placeholder="(^-^)">DETECTAR MAGIA
 Um dos seus sentidos torna-se momentaneamente sintonizado com a magia. O narrador lhe dirá o que é mágico ao seu redor.</textarea>
+
+    <h3 style="margin-top: 4rem;" class="main-label">FEITIÇOS:</h3>
+<textarea class="input-text -textarea" placeholder="(^-^)">Mísseis Mágicos (Nível 1, Evocação)
+Projéteis de pura magia são disparados das pontas de seus dedos. Cause 2d4 de dano a um alvo</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">Contra Magia (Nível 1)
+Escolha um feitiço ou efeito mágico em sua presença: ele será destroçado por este feitiço. Magias menores são encerradas, enquanto efeitos poderosos são apenas reduzidos ou anulados enquanto o mago permanecer por perto.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">Invisibilidade (Nível 1, Ilusão, Contínuo)
+Toque um aliado: ninguém será mais capaz de vê-lo, pois ele fica invisível! Este feitiço permanece ativo até que seu alvo ataque ou que você o desfaça. Enquanto este feitiço continuar ativo, você não poderá conjurar um novo feitiço.</textarea>
+
+<section id="magia" class="main-structure -space" style="width: 100%; margin-top: 2.5rem;"></section>
+    <div class='char-moves'>
+        <button class="new" id="nova"></button>
+        <button id="remover"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
+    </div>
 
     <button class="save-btn"><img src="../assets/img/disquete.png" alt="Disquete"></button>
     </div>
@@ -244,5 +257,6 @@ Um dos seus sentidos torna-se momentaneamente sintonizado com a magia. O narrado
     <script src="../scripts/main-die.js"></script>
     <script src="../scripts/d4.js"></script>
     <script src="../scripts/add-remove.js"></script>
+    <script src="../scripts/novas-magias.js"></script>
 </body>
 </html>

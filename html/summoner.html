@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evocadores</title>
+    <title>Feitiçaria</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
@@ -29,7 +29,7 @@
         <article class="atb-item">
             <div class="value">
                 <label>Força</label>
-                <input oninput="calcMod(this.value, 0)" class="input-text -thin" type="text" value="15">
+                <input oninput="calcMod(this.value, 0)" class="input-text -thin" type="text" value="13">
             </div>
 
             <div class="deb">
@@ -46,12 +46,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Destreza</label>
-                <input oninput="calcMod(this.value, 1)" class="input-text -thin" type="text" value="12">
+                <input oninput="calcMod(this.value, 1)" class="input-text -thin" type="text" value="8">
             </div>
 
             <div class="ball">
                 <label for="">DES</label>
-                <input class="input-text -thin" value="+0" type="text">
+                <input class="input-text -thin" value="-1" type="text">
             </div>
             
             <div class="deb">
@@ -63,7 +63,7 @@
         <article class="atb-item">
             <div class="value">
                 <label>Constituição</label>
-                <input oninput="calcMod(this.value, 2)" class="input-text -thin" type="text" value="13">
+                <input oninput="calcMod(this.value, 2)" class="input-text -thin" type="text" value="15">
             </div>
 
             <div class="ball">
@@ -80,12 +80,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Inteligência</label>
-                <input oninput="calcMod(this.value, 3)" class="input-text -thin" type="text" value="9">
+                <input oninput="calcMod(this.value, 3)" class="input-text -thin" type="text" value="16">
             </div>
             
             <div class="ball">
                 <label>INT</label>
-                <input class="input-text -thin" value="+0" type="text" >
+                <input class="input-text -thin" value="+2" type="text" >
             </div>
             
             <div class="deb">
@@ -97,12 +97,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Sabedoria</label>
-                <input oninput="calcMod(this.value, 4)" class="input-text -thin" type="text" value="16">
+                <input oninput="calcMod(this.value, 4)" class="input-text -thin" type="text" value="9">
             </div>
             
             <div class="ball">
                 <label>SAB</label>
-                <input class="input-text -thin" value="+2" type="text">
+                <input class="input-text -thin" value="+0" type="text">
             </div>
             
             <div class="deb">
@@ -114,12 +114,12 @@
         <article class="atb-item">
             <div class="value">
                 <label>Carisma</label>
-                <input oninput="calcMod(this.value, 5)" class="input-text -thin" type="text" value="8">
+                <input oninput="calcMod(this.value, 5)" class="input-text -thin" type="text" value="12">
             </div>
             
             <div class="ball">
                 <label>CAR</label>
-                <input class="input-text -thin" value="-1" type="text">
+                <input class="input-text -thin" value="+0" type="text">
             </div>
             
             <div class="deb">
@@ -152,14 +152,14 @@
     <section class="status-core">
         <div class="pv">
             <label>PV:</label>
-            <input class="input-text -thin" type="text" value="21">
+            <input class="input-text -thin" type="text" value="19">
             <span>/</span>
-            <input class="input-text -thin" type="text" value="21">
+            <input class="input-text -thin" type="text" value="19">
         </div>
         
         <div class="dmg">
             <label>Dano</label>
-            <input class="input-text -thin" type="text" value="D8">
+            <input class="input-text -thin" type="text" value="D4">
         </div>
         
         <div class="armor">
@@ -168,8 +168,8 @@
         </div>
     </section>
 
-    <section class="die-damage -d8">
-        <button><img id="dmgDie" src="../assets/img/d8/d8 (8).png"></button>
+    <section class="die-damage -d8 -d4">
+        <button><img id="dmgDie" src="../assets/img/d4/d4 (4).png"></button>
     </section>
 
     <div class="char-depic">
@@ -186,38 +186,67 @@ O arqueiro aparenta ser uma pessoa ingênua, me encargo de alertar a ele sobre o
     <section class="info-display -margin">
         <article class="info">
             <label>Moedas:</label>
-            <input type="text" value="15" class="input-text -small">
+            <input type="text" value="19" class="input-text -small">
         </article>
         <article class="info">
             <label>Carga:</label>
-            <input type="text" value="0" class="input-text -thin">
+            <input type="text" value="2" class="input-text -thin">
             <span>/</span>
-            <input type="text" value="7" class="input-text -thin">
+            <input type="text" value="8" class="input-text -thin">
         </article>
     </section>
 
     <div class="char-depic">
         <label class="main-label">Equipamentos:</label>
-        <textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc"></textarea>
+<textarea class="input-text -textarea -big" placeholder="Ex: tochas, cordas, flechas etc">Armadura de couro (armadura 1, peso 1);
+3 poções de cura (peso 0);
+Adaga (mão, peso 1)
+</textarea>
     </div>
 
     <h3 style="margin-top: 4rem;" class="main-label">MOVIMENTOS:</h3>
-<textarea class="input-text -textarea" placeholder="(^-^)">ADAPTÁVEL
-Você cresceu em torno de pessoas diferentes de você, treinando para ser como elas. Você pode usar o movimento racial de um dos jogadores com quem você tem um Vínculo. Quando você resolver esse vínculo, você poderá mudar para um movimento racial de outro jogador com quem você tenha um vínculo.</textarea>
+<textarea class="input-text -textarea" placeholder="(^-^)">PRODÍGIO
+A magia lhe é tão natural quanto o ato de respirar. Detectar Magia é considerada um truque para você.</textarea>
 
-<textarea class="input-text -textarea -void" placeholder="(^-^)">GRAÇA MORTAL
-Enquanto você estiver em pé e livre (não desajeitado, não sobrecarregado, etc.), você tem +1 de armadura.</textarea>
+<textarea class="input-text -textarea -void" placeholder="(^-^)">CONJURAR FEITIÇOS
+Quando lançar um feitiço preparado, role+INT. Com 10+, o feitiço é conjurado com sucesso e não é esquecido. Com 7-9, o feitiço é conjurado, mas escolha um:
+•	 Você atrai atenção indesejável ou se coloca em alguma situação complicada. O narrador descreverá como.
+•	 Sua conjuração perturba a trama da realidade – receba -1 constante para conjurar feitiços até a próxima vez que você Preparar Feitiços.
+•	 Você esquece o feitiço após conjurá-lo, e não conseguirá conjurá-lo de novo até a próxima vez que preparar feitiços.</textarea>
 
-<textarea class="input-text -textarea -void" placeholder="(^-^)">MEDITAÇÃO
-Quando você passar algum tempo contemplando o silêncio (cerca de uma hora ou mais), perca todo o Fluxo e role +SAB. Com 10+, ganhe 3 de Fluxo. Com 7-9, ganhe 2, e com 6, ganhe 1, além de qualquer outra coisa que o narrador possa acrescentar. Gaste o fluxo (máximo: 1) para ganhar +1 em uma rolagem.</textarea>
-
-<textarea class="input-text -textarea -void" placeholder="(^-^)">POSTURA MARCIAL
-Através de muito estudo e dedicação durante os treinos, você aprendeu o suficiente para desenvolver a sua própria técnica marcial. Apartir de agora, quando um golpe (CaC) for bem aplicado, causará o efeito de atordoamento aos alvos inimigos.</textarea>
+<textarea class="input-text -textarea -void" placeholder="(^-^)">DEFESA MÁGICA
+Você pode desfazer um feitiço contínuo imediatamente, e utilizar a energia envolvida em sua dissipação para defletir um ataque. O feitiço é encerrado e você subtrai o nível dele do dano recebido.</textarea>
 
     <section class="new-moves main-structure -space" style="width: 100%;"></section>
     <div class='char-moves'>
-        <button id="new"></button>
+        <button class="new" id="new"></button>
         <button id="delete"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
+    </div>
+
+    <h3 style="margin-top: 4rem;" class="main-label">TRUQUES:</h3>
+<textarea class="input-text -textarea" placeholder="(^-^)">LUX
+Um item tocado por você brilha com luz arcana, com a mesma intensidade de uma tocha. Essa luz não emite calor ou som e nem precisa de combustível para queimar, mas funciona como uma tocha comum para todos os outros efeitos. Você possui total controle sobre a cor da luz. O feitiço dura enquanto o item estiver em sua presença.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">CRIADO MUDO
+Este feitiço conjura um construto simples que não é capaz de fazer nada a não ser carregar itens. Ele possui Carga 3 e consegue carregar qualquer coisa que você entregar a ele, mas não é capaz de ir buscar objetos por conta própria. Caso o servo receba dano ou saia de sua presença, ele se desfaz imediatamente. De outra forma, ele o serve até que o feitiço seja encerrado.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">DETECTAR MAGIA
+Um dos seus sentidos torna-se momentaneamente sintonizado com a magia. O narrador lhe dirá o que é mágico ao seu redor.</textarea>
+
+    <h3 style="margin-top: 4rem;" class="main-label">FEITIÇOS:</h3>
+<textarea class="input-text -textarea" placeholder="(^-^)">Mísseis Mágicos (Nível 1, Evocação)
+Projéteis de pura magia são disparados das pontas de seus dedos. Cause 2d4 de dano a um alvo</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">Contra Magia (Nível 1)
+Escolha um feitiço ou efeito mágico em sua presença: ele será destroçado por este feitiço. Magias menores são encerradas, enquanto efeitos poderosos são apenas reduzidos ou anulados enquanto o mago permanecer por perto.</textarea>
+
+<textarea class="input-text -textarea -void" placeholder="(^-^)">Invisibilidade (Nível 1, Ilusão, Contínuo)
+Toque um aliado: ninguém será mais capaz de vê-lo, pois ele fica invisível! Este feitiço permanece ativo até que seu alvo ataque ou que você o desfaça. Enquanto este feitiço continuar ativo, você não poderá conjurar um novo feitiço.</textarea>
+
+<section id="magia" class="main-structure -space" style="width: 100%; margin-top: 2.5rem;"></section>
+    <div class='char-moves'>
+        <button class="new" id="nova"></button>
+        <button id="remover"><img src="../assets/img/trash.png" alt="Lata de lixo"></button>
     </div>
 
     <button class="save-btn"><img src="../assets/img/disquete.png" alt="Disquete"></button>
@@ -226,7 +255,8 @@ Através de muito estudo e dedicação durante os treinos, você aprendeu o sufi
     <script src="../scripts/local-storage.js"></script>
     <script src="../scripts/atb-item.js"></script>
     <script src="../scripts/main-die.js"></script>
-    <script src="../scripts/d8.js"></script>
+    <script src="../scripts/d4.js"></script>
     <script src="../scripts/add-remove.js"></script>
+    <script src="../scripts/novas-magias.js"></script>
 </body>
 </html>
