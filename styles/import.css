@@ -2,18 +2,16 @@
 
 @import 'reset.css';
 @import 'variables.css';
+@import 'components/save-btn.css';
 @import 'components/elmnt-body.css';
-@import 'components/char-choice.css';
 @import 'components/main-title.css';
 @import 'components/second-title.css';
+@import 'components/char-choice.css';
 @import 'components/main-header.css';
 @import 'components/elmnt-input.css';
 @import 'components/elmnt-label.css';
 @import 'components/atb-view.css';
 @import 'components/atb-slot.css';
-@import 'components/save-btn.css';
-@import 'components/input-text.css';
-@import 'components/char-depic.css';
 @import 'components/main-die.css';
 @import 'components/info-display.css';
 @import 'components/status-core.css';

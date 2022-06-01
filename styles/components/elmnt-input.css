@@ -20,7 +20,11 @@
     color: inherit;
     font-weight: inherit;
 }
+.elmnt-input.-size{
+    font-size: 2rem;
+}
 .elmnt-input::placeholder{
     font-style: italic;
     font-weight: 700;
+    color: var(--yellow);
 }

@@ -1,6 +1,6 @@
 .second-title{
-    color: var(--yellow);
     font-family: var(--averia);
     font-size: 1.3rem;
     margin: 0.7rem;
+    text-shadow: 0.3rem -0.2rem 0.1rem #000 !important;
 }
