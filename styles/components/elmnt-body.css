@@ -1,0 +1,6 @@
+.elmnt-body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

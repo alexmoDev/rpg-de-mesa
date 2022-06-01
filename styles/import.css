@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import 'reset.css';
 @import 'variables.css';
-@import 'elements.css';
+@import 'components/elmnt-body.css';
+@import 'components/char-choice.css';
+@import 'components/main-title.css';
+@import 'components/second-title.css';
 @import 'components/save-btn.css';
 @import 'components/main-structure.css';
 @import 'components/pg-title.css';
