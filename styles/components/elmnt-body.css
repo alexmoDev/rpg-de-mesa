@@ -2,7 +2,14 @@
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    gap: 20px;
     font-family: var(--averia);
     color: var(--white);
+}
+.elmnt-body.-gap{
+    gap: 20px;
+}
+.elmnt-body>.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
