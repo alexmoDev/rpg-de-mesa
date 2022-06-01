@@ -1,0 +1,22 @@
+.elmnt-input{
+    font-family: var(--averia);
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+}
+.elmnt-input.-textarea{
+    box-shadow: 0 0 20px #000;
+    height: 10rem;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 1rem;
+    color: var(--yellow);
+}
+
+.elmnt-input::placeholder{
+    font-style: italic;
+    font-weight: 700;
+}

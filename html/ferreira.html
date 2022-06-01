@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Cavalaria</title>
+    <title>Ferreira</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
@@ -13,16 +13,13 @@
 
     <link rel="stylesheet" href="../styles/import.css">
 </head>
-<body>
-    <div style="border-radius: var(--border-radius);">
-    <section class="main-header main-structure -gap -top">
-        <input class="input-text -title -italic" type="text" value="Nome da Personagem">
-        <img class="header" style="max-width: 100%; margin-bottom: 3.5rem;" src="../assets/img/heading-landscape.jpg" alt="Medieval Landscape">
-        <div class="char-depic">
-            <label class="main-label">Aparência/Descrição:</label>
-            <textarea class="input-text -textarea" placeholder="Ex: Aparência séria, cicatriz no rosto etc"></textarea>
-        </div>
-    </section>
+<body class="elmnt-body">
+    <header class="main-header">
+        <input class="elmnt-input" type="text" value="Nome da Personagem">
+        <img src="../assets/img/banner/campo.jpg" alt="paisagem medieval">
+    </header>
+    <label class="elmnt-label">Aparência/Descrição</label>
+    <textarea class="elmnt-input -textarea" placeholder="Ex: Olheiras enormes, cara fechada, roupas amassadas etc." type="text"></textarea>
 
     <h1 class="main-label">ATRIBUTOS:</h1>
     <section class="atb-sec">
@@ -224,7 +221,6 @@ Ignore o rótulo 'desengonçada' em qualquer armadura que você vestir.</textare
     </div>
 
     <button class="save-btn"><img src="../assets/img/disquete.png" alt="Disquete"></button>
-    </div>
 
     <script src="../scripts/local-storage.js"></script>
     <script src="../scripts/atb-item.js"></script>
