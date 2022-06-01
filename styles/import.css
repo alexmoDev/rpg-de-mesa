@@ -9,15 +9,11 @@
 @import 'components/main-header.css';
 @import 'components/elmnt-input.css';
 @import 'components/elmnt-label.css';
+@import 'components/atb-view.css';
+@import 'components/atb-slot.css';
 @import 'components/save-btn.css';
-@import 'components/main-structure.css';
-@import 'components/pg-title.css';
-@import 'components/character-icon.css';
 @import 'components/input-text.css';
 @import 'components/char-depic.css';
-@import 'components/main-label.css';
-@import 'components/atb-sec.css';
-@import 'components/atb-item.css';
 @import 'components/main-die.css';
 @import 'components/info-display.css';
 @import 'components/status-core.css';

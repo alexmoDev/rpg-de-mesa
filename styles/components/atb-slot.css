@@ -1,0 +1,54 @@
+.atb-slot{
+    font-weight: 700;
+    border-radius: 15px;
+    height: 5rem;
+    padding: 0 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 35px;
+    background-color: var(--yellow);
+}
+.atb-slot>.value{
+    display: flex;
+    gap: 1rem;
+}
+.atb-slot>.value>*{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.atb-slot>.deb{
+    align-self: flex-end;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
+.atb-slot>.deb>label{
+    font-size: 0.8rem;
+}
+.atb-slot>.deb>input{
+    transform: scale(1.5);
+}
+.atb-slot>.ball{
+    background-color: var(--bg-color);
+    box-shadow: 7px 7px 25px #000;
+    color: var(--white);
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 2.5rem;
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.atb-slot>.ball *{
+    font-size: 1rem;
+    line-height: 1rem;
+}

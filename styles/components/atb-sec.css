@@ -1,9 +1,0 @@
-.atb-sec {
-    padding: 0.7rem;
-    padding-top: 0rem;
-    color: var(--third-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2.7rem;
-}

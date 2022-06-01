@@ -1,0 +1,7 @@
+.atb-view{
+    padding: 0 0.7rem;
+    color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
