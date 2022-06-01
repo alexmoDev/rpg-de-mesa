@@ -20,6 +20,11 @@
     color: inherit;
     font-weight: inherit;
 }
+.elmnt-input.-small{
+    width: 1.7rem;
+    color: inherit;
+    font-weight: inherit;
+}
 .elmnt-input.-size{
     font-size: 2rem;
 }

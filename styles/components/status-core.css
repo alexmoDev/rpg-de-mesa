@@ -1,21 +1,16 @@
-.status-core {
+.status-core{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
-    font-size: var(--second-font-size);
     background-color: var(--third-bg);
     color: var(--third-color);
     padding: 1rem 0rem;
 }
-
-.status-core > div * {
-    font-size: inherit;
-    line-height: var(--second-font-size);
+.status-core *{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     font-weight: 700;
-    color: inherit;
 }
-
 .status-core > .dmg {
     display: flex;
     flex-direction: column;

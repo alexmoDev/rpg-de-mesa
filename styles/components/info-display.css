@@ -1,21 +1,16 @@
-.info-display {
+.info-display{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
-    font-size: var(--title-font-size);
-    border-top: var(--third-bg) solid 0.5rem;
-    border-bottom: var(--third-bg) solid 0.5rem;
+    border-top: var(--yellow) solid 0.5rem;
+    border-bottom: var(--yellow) solid 0.5rem;
     padding: 1rem 0rem;
     margin-bottom: 3.5rem;
 }
-
-.info-display > .info * {
-    font-size: inherit;
-    line-height: var(--title-font-size);
+.info-display>.info *{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
 }
-
-.info-display.-margin {
+.info-display.-margin{
     margin-top: 5rem;
     margin-bottom: 1.5rem;
 }
