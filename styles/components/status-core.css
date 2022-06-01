@@ -2,16 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--third-bg);
-    color: var(--third-color);
-    padding: 1rem 0rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 1rem 0;
 }
 .status-core *{
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: 700;
 }
-.status-core > .dmg {
+.status-core>.dmg{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,13 +19,16 @@
     border: #222 solid 0.3rem;
     border-top-color: #444;
     border-left-color: #444;
-    border-radius: var(--border-radius);
-    box-shadow: 0rem 0rem 0.5rem #000;
-    padding: 0.3rem;
+    border-radius: 18px;
+    box-shadow: 0 0 5px #000;
+    padding: 0.4rem;
     background-color: var(--bg-color);
-    color: var(--color);
+    color: var(--white);
 }
-
-.status-core > .dmg input {
-    width: 2.3rem;
+.status-core>.dmg *{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+.status-core>.dmg>input{
+    width: 2.5rem !important;
 }
