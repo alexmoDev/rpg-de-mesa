@@ -1,16 +1,15 @@
-.char-moves {
+.move-btn {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
     margin-bottom: 2rem;
 }
 
-.char-moves button {
-    background-color: var(--second-bg);
+.move-btn button {
+    background-color: var(--grey);
     border: none;
     outline: none;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     width: 35%;
     height: 60px;
 
@@ -18,11 +17,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    box-shadow: 0rem 0rem 1rem #000;
+    box-shadow: 0 0 16px #000;
     cursor: pointer;
 }
 
-.char-moves .new::after {
+.move-btn #new::after {
     content: '';
     height: 2.3rem;
     width: 0.5rem;
@@ -30,7 +29,7 @@
     background-color: #fff;
 }
 
-.char-moves .new::before {
+.move-btn #new::before {
     content: '';
     height: 2.3rem;
     width: 0.5rem;
@@ -41,6 +40,6 @@
     bottom: 0px;
 }
 
-.char-moves img {
+.move-btn img {
     max-height: 2.5rem;
 }

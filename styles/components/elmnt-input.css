@@ -12,8 +12,10 @@
     height: 10rem;
     font-size: 0.9rem;
     text-align: left;
-    padding: 1rem;
+    padding: 0.5rem 0.7rem;
     color: var(--yellow);
+    width: 100%;
+    box-sizing: border-box;
 }
 .elmnt-input.-thin {
     width: 1.5rem;

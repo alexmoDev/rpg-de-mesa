@@ -16,5 +16,5 @@
 @import 'components/info-display.css';
 @import 'components/status-core.css';
 @import 'components/die-damage.css';
-@import 'components/char-moves.css';
+@import 'components/move-btn.css';
 @import 'media-query.css';

@@ -1,4 +1,4 @@
-const $input = document.querySelectorAll('.input-text');
+const $input = document.querySelectorAll('.elmnt-input');
 const $checkbox = document.querySelectorAll('.checkbox');
 const $addMoves = document.querySelector('.new-moves');
 const $addMagia = document.querySelector('#magia');
@@ -9,10 +9,10 @@ $input.forEach((element, index)=> element.value = localStorage.getItem('input '+
 $checkbox.forEach((element, index)=> element.checked = boolean(element, index));
 
 for (let i= 0; i< parseInt(localStorage.getItem('moves')); i++) {
-    $addMoves.insertAdjacentHTML('beforeend', '<textarea class="input-text -textarea" placeholder="(^-^)"></textarea>');
+    $addMoves.insertAdjacentHTML('beforeend', '<textarea class="elmnt-input -textarea" placeholder="(^-^)"></textarea>');
 };
 for (let i= 0; i< parseInt(localStorage.getItem('magia')); i++) {
-    $addMagia.insertAdjacentHTML('beforeend', '<textarea class="input-text -textarea" placeholder="(^-^)"></textarea>');
+    $addMagia.insertAdjacentHTML('beforeend', '<textarea class="elmnt-input -textarea" placeholder="(^-^)"></textarea>');
 };
 
 let $newMoves = document.querySelectorAll('.new-moves textarea');

@@ -1,4 +1,4 @@
-const $mod = document.querySelectorAll('.ball> input');
+const $mod = document.querySelectorAll('.ball>input');
 
 function calcMod(value, i) {
     if(value>= 1 && value<= 3) {
