@@ -10,4 +10,10 @@
         box-shadow: 0 0 30px #000;
         border-radius: 20px;
     }
+    .elmnt-body>.wrapper{
+        box-shadow: none;
+    }
+    .elmnt-body>.wrapper img{
+        border-radius: 15px;
+    }
 }
