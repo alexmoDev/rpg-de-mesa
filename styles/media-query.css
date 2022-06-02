@@ -16,4 +16,15 @@
     .elmnt-body>.wrapper img{
         border-radius: 15px;
     }
+    .atb-slot{
+        height: 85px;
+    }
+    .ball{
+        height: 75px !important;
+        width: 75px !important;
+        border-radius: 40px !important;
+    }
+    .main-die>.wrapper{
+        max-width: 400px;
+    }
 }

@@ -17,6 +17,9 @@
     width: 100%;
     box-sizing: border-box;
 }
+.elmnt-input.-big{
+    height: 15rem;
+}
 .elmnt-input.-thin {
     width: 1.5rem;
     color: inherit;
